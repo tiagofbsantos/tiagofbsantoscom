@@ -1,0 +1,17 @@
+@font-face {
+  font-display: swap;
+  font-family: "Aquatico-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Aquatico-Regular"), url("./assets/Aquatico-Regular.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: "Aquatico-Regular";
+  color: black;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
