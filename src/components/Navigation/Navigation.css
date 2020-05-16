@@ -1,88 +1,91 @@
 .navigation {
-	position: sticky;
-	top: 0;
-	background-color: #0077B5;
-	height: 10vh;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0vh 10vw;
+  position: sticky;
+  top: 0;
+  background-color: #0077b5;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vh 10vw;
 }
 
 .navLeft {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .projectsSvg {
-	height: 32px;
-	width: 110px;
+  height: 32px;
+  width: 110px;
 }
 
-.skillsSvg {
-	height: 32px;
-	width: 90px;
+.miniProjectsSvg {
+  height: 32px;
+  width: 155px;
 }
 
 .svgWrapper {
-	margin: 0vh 2vw;
+  margin: 0vh 2vw;
   padding: 2vh 0vw;
   text-align: center;
 }
 
 .projectsShape {
-  stroke-dasharray: 65 270;	/*#length of underline #don't touch*/
-  stroke-dashoffset: -165;	/*position of underline, x axis => +goes right -goes left*/
+  stroke-dasharray: 65 270; /*#length of underline #don't touch*/
+  stroke-dashoffset: -165; /*position of underline, x axis => +goes right -goes left*/
   stroke-width: 6px;
   fill: transparent;
   stroke: black;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s, stroke 1s;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s,
+    stroke 1s;
 }
 
-.skillsShape {
-  stroke-dasharray: 65 540;	/*#length of underline #don't touch*/
-  stroke-dashoffset: -165;	/*position of underline, x axis => +goes right -goes left*/
+.miniProjectsShape {
+  stroke-dasharray: 65 540; /*#length of underline #don't touch*/
+  stroke-dashoffset: -165; /*position of underline, x axis => +goes right -goes left*/
   stroke-width: 6px;
   fill: transparent;
   stroke: black;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s, stroke 1s;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s,
+    stroke 1s;
 }
 
-.svgWrapper:hover .projectsShape, .svgWrapper:hover .skillsShape {
+.svgWrapper:hover .projectsShape,
+.svgWrapper:hover .miniProjectsShape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
-  stroke-dasharray: 285;	/*Change this value to make the lines meet at the same time*/
+  stroke-dasharray: 285; /*Change this value to make the lines meet at the same time*/
   stroke: white;
 }
 
 .svgWrapper .svgtext {
-	transition: all 1s;
+  transition: all 1s;
 }
 
 .svgWrapper:hover .svgtext {
-	fill: white;
+  fill: white;
 }
 
 .navRight {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .navRight > a {
-	margin: 0vh 2vw;
+  margin: 0vh 2vw;
 }
 
 .navRight svg {
-	height: 32px;
-	width: auto;
-	transition: all 1s;
+  height: 32px;
+  width: auto;
+  transition: all 1s;
 }
 
 .navRight svg:hover {
-	fill: white;	
+  fill: white;
 }

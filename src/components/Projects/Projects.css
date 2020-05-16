@@ -1,14 +1,13 @@
 .projects {
-	background-color: #F9F9F9;
-	height: auto;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-
+  background-color: #f9f9f9;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .projects > h1 {
-	padding: 10vh 10vw 0vh 10vw;
-	margin: 0px;
+  padding: 10vh 10vw 0vh 10vw;
+  margin: 0px;
 }
