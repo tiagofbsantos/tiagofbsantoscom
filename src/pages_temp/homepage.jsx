@@ -4,13 +4,13 @@ import Navigation from "../components/navigation/navigation";
 import AboutMe from "../components/about-me/about-me";
 import Projects from "../components/projects/projects";
 
-import SmartVision from "../assets/SmartVision.png";
-import BenderFriends from "../assets/BenderFriends.png";
-import MeerkatApparel from "../assets/MeerkatApparel.png";
-import BackgroundGenerator from "../assets/BackgroundGenerator.png";
-import Startup from "../assets/Startup.png";
-import DancingDroid from "../assets/DancingDroid.png";
-import Wildlife from "../assets/Wildlife.png";
+import SmartVision from "../assets/smart_vision.png";
+import BenderFriends from "../assets/bender_friends.png";
+import MeerkatApparel from "../assets/meerkat_apparel.png";
+import BackgroundGenerator from "../assets/backgroundgenerator.png";
+import Startup from "../assets/startup.png";
+import DancingDroid from "../assets/dancing_droid.png";
+import Wildlife from "../assets/wildlife.png";
 
 const projectsList = [
   {

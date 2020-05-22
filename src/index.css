@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Aquatico-Regular"),
-    url("./assets/Aquatico-Regular.woff") format("woff");
+    url("./assets/aquatico-regular.woff") format("woff");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Alphapipe"),
-    url("./assets/BC_Alphapipe_RB_Regular.woff") format("woff");
+    url("./assets/bc_alphapipe_rb_regular.woff") format("woff");
 }
 
 body {
