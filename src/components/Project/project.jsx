@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./project.css";
 
-//class Project extends React.Component {
 const Project = ({
   image,
   name,
@@ -9,11 +9,11 @@ const Project = ({
   source,
   apiSource,
   live,
-  section,
+  item,
+  moreInfo,
 }) => {
-  //const { image, name, description, source, apiSource, live } = this.props;
   return (
-    <section className={`${section}`}>
+    <section className={`${item}`}>
       <article className="projectText">
         <h2>{name}</h2>
         <p>{description}</p>
@@ -28,6 +28,11 @@ const Project = ({
             <a href={apiSource} className="projectLink">
               API Code
             </a>
+          )}
+          {moreInfo !== "" && (
+            <Link to={`${moreInfo}`} className="projectLink">
+              More Info
+            </Link>
           )}
         </nav>
       </article>

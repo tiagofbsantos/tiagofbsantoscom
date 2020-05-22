@@ -7,7 +7,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0vh 10vw;
+  flex-wrap: nowrap;
+  /* white-space: nowrap; */
+  padding: 0vh 5vw;
 }
 
 .navLeft {
@@ -15,6 +17,8 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: nowrap;
+  /* white-space: nowrap; */
 }
 
 .projectsSvg {
@@ -24,11 +28,21 @@
 
 .miniProjectsSvg {
   height: 32px;
-  width: 155px;
+  width: 150px;
+}
+
+.skillsSvg {
+  height: 32px;
+  width: 80px;
+}
+
+.backSvg {
+  height: 32px;
+  width: 70px;
 }
 
 .svgWrapper {
-  margin: 0vh 2vw;
+  margin: 0vh 0.5vw;
   padding: 2vh 0vw;
   text-align: center;
 }
@@ -44,8 +58,28 @@
 }
 
 .miniProjectsShape {
-  stroke-dasharray: 65 540; /*#length of underline #don't touch*/
-  stroke-dashoffset: -165; /*position of underline, x axis => +goes right -goes left*/
+  stroke-dasharray: 95 270; /*#length of underline #don't touch | speed of animation*/
+  stroke-dashoffset: -210; /*position of underline, x axis => +goes right -goes left*/
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s,
+    stroke 1s;
+}
+
+.skillsShape {
+  stroke-dasharray: 40 270; /*#length of underline #don't touch*/
+  stroke-dashoffset: -132; /*position of underline, x axis => +goes right -goes left*/
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s,
+    stroke 1s;
+}
+
+.backShape {
+  stroke-dasharray: 35 270; /*#length of underline #don't touch*/
+  stroke-dashoffset: -120; /*position of underline, x axis => +goes right -goes left*/
   stroke-width: 6px;
   fill: transparent;
   stroke: black;
@@ -54,10 +88,34 @@
 }
 
 .svgWrapper:hover .projectsShape,
-.svgWrapper:hover .miniProjectsShape {
+.svgWrapper:focus .projectsShape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
   stroke-dasharray: 285; /*Change this value to make the lines meet at the same time*/
+  stroke: white;
+}
+
+.svgWrapper:hover .miniProjectsShape,
+.svgWrapper:focus .miniProjectsShape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 365; /*Change this value to make the lines meet at the same time*/
+  stroke: white;
+}
+
+.svgWrapper:hover .skillsShape,
+.svgWrapper:focus .skillsShape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 225; /*Change this value to make the lines meet at the same time*/
+  stroke: white;
+}
+
+.svgWrapper:hover .backShape,
+.svgWrapper:focus .backShape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 205; /*Change this value to make the lines meet at the same time*/
   stroke: white;
 }
 
@@ -65,8 +123,28 @@
   transition: all 1s;
 }
 
-.svgWrapper:hover .svgtext {
+.svgWrapper:hover .svgtext,
+.svgWrapper:focus .svgtext {
   fill: white;
+}
+
+.navigation button {
+  height: auto;
+  width: auto;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 100%;
+  text-transform: none;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.navigation button:hover,
+.navigation button:focus {
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .navRight {
@@ -77,7 +155,8 @@
 }
 
 .navRight > a {
-  margin: 0vh 2vw;
+  margin: 0vh 1vw;
+  transition: all 1s;
 }
 
 .navRight svg {
@@ -86,6 +165,13 @@
   transition: all 1s;
 }
 
-.navRight svg:hover {
+.navRight svg:hover,
+.navRight a:focus {
   fill: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    padding: 0vh 0.5vw;
+  }
 }

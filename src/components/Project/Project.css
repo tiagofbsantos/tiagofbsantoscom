@@ -1,5 +1,4 @@
 .project {
-  background-color: #f9f9f9;
   height: 90vh;
   display: flex;
   flex-direction: row;
@@ -11,7 +10,6 @@
 .miniProject {
   height: 90vh;
   text-align: center;
-  background: linear-gradient(to right, rgb(166, 255, 255), rgb(128, 213, 253));
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -47,15 +45,21 @@
   overflow-wrap: break-word;
 }
 
+.projectText p {
+  font-family: Alphapipe;
+  font-size: 24px;
+}
+
 .projectLinks {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .projectLink {
-  margin: 3vh 3vw;
+  margin: 2vh 1vw;
   padding: 1vh 1vw;
   text-decoration: none;
   border: solid #0077b5;

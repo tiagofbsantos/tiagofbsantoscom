@@ -11,3 +11,18 @@
   padding: 10vh 10vw 0vh 10vw;
   margin: 0px;
 }
+
+.miniProjects {
+  background-color: linen;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.miniProjects > h1 {
+  padding: 10vh 10vw 0vh 10vw;
+  margin: 0px;
+  font-size: 32px;
+}

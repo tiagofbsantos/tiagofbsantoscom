@@ -11,7 +11,8 @@ const AboutMe = () => {
         A Full-Stack Web Developer with a Bachelor's in Computer Science and
         Business Management.
       </p>
-      <p>Currently looking for full time employment in the USA or Canada!</p>
+      <p>Currently looking for full time employment!</p>
+      <p>Contact me at santosfbtiago@gmail.com</p>
     </header>
   );
 };

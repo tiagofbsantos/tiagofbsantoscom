@@ -5,6 +5,11 @@
   padding: 10vh 10vw;
 }
 
+.aboutMe p {
+  font-family: Alphapipe;
+  font-size: 24px;
+}
+
 .profilePic {
   width: auto;
   height: 40vh;

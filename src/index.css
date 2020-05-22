@@ -3,7 +3,17 @@
   font-family: "Aquatico-Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Aquatico-Regular"), url("./assets/Aquatico-Regular.woff") format("woff");
+  src: local("Aquatico-Regular"),
+    url("./assets/Aquatico-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Alphapipe";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Alphapipe"),
+    url("./assets/BC_Alphapipe_RB_Regular.woff") format("woff");
 }
 
 body {
@@ -12,6 +22,8 @@ body {
   color: black;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }

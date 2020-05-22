@@ -1,0 +1,88 @@
+.projectPageBackground {
+  background-color: #f9f9f9;
+}
+
+.projectPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projectTitle {
+  padding: 5vh 0vw;
+  margin: 0px;
+  text-align: center;
+  font-family: "Aquatico-Regular";
+}
+
+.text {
+  flex: 60%;
+  max-width: 60%;
+  height: auto;
+  padding: 0vh 2.5vw 0vh 5vw;
+  overflow-wrap: break-word;
+  font-family: Alphapipe;
+  font-size: 24px;
+}
+
+.text a {
+  color: black;
+}
+
+.technologies {
+  flex: 40%;
+  max-width: 40%;
+  height: auto;
+  padding: 0vh 5vw 0vh 2.5vw;
+}
+
+.technologies h2 {
+  text-align: center;
+  margin: 0;
+  padding: 7vh 0vw 5vh 0vw;
+}
+
+.logos {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-items: center;
+  align-items: center;
+}
+
+.logos > a {
+  margin: 1vh 1vw;
+}
+
+.logos svg {
+  height: auto;
+  width: 90px;
+  transition: all 1s;
+}
+
+.logos img {
+  width: auto;
+  height: 80px;
+  transition: all 1s;
+}
+
+.logos img:hover,
+.logos img:focus,
+.logos svg:hover,
+.logos svg:focus {
+  transform: scale(1.1);
+}
+
+.projectPageBackground .projectLinks {
+  padding: 5vh 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .text,
+  .technologies {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
