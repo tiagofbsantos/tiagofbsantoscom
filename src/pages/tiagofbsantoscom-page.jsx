@@ -12,6 +12,7 @@ import { ReactComponent as GithubLogo } from "../assets/github.svg";
 import { ReactComponent as NpmLogo } from "../assets/npm.svg";
 import { ReactComponent as ReactRouterLogo } from "../assets/reactrouter.svg";
 import AmplifyLogo from "../assets/amplify.png";
+import PWAScore from "../assets/pwatiagofbsantoscom.png";
 
 import "./project-page.css";
 import "../components/project/project.css";
@@ -53,6 +54,14 @@ const TiagoFBSantosCom = () => {
               Deployed the app using <strong>AWS Amplify</strong> and{" "}
               <strong>Amazon Route 53</strong> for domain management.
             </p>
+            <nav className="projectLinks">
+              <a
+                href="https://github.com/tiagofbsantos/tiagofbsantoscom"
+                className="projectLink"
+              >
+                App Code
+              </a>
+            </nav>
           </article>
           <div className="technologies">
             <h2>Technologies used:</h2>
@@ -91,16 +100,15 @@ const TiagoFBSantosCom = () => {
                 <NpmLogo />
               </a>
             </div>
+            <p>Progressive Web App Lighthouse Score: </p>
+            <a
+              className="pwaImg"
+              href="https://developers.google.com/web/tools/lighthouse/v3/scoring"
+            >
+              <img src={PWAScore} alt="Progressive Web App Lighthouse Score" />
+            </a>
           </div>
         </main>
-        <nav className="projectLinks">
-          <a
-            href="https://github.com/tiagofbsantos/tiagofbsantoscom"
-            className="projectLink"
-          >
-            App Code
-          </a>
-        </nav>
       </div>
     </Fragment>
   );

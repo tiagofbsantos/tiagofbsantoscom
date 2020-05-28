@@ -14,6 +14,7 @@ import { ReactComponent as JestLogo } from "../assets/jest.svg";
 import { ReactComponent as ReduxLogo } from "../assets/redux.svg";
 import { ReactComponent as CircleciLogo } from "../assets/circleci.svg";
 import AmplifyLogo from "../assets/amplify.png";
+import PWAScore from "../assets/pwakittengenerator.png";
 
 import "./project-page.css";
 import "../components/project/project.css";
@@ -33,11 +34,14 @@ const KittenGeneratorPage = () => {
             </p>
             <p>
               Using{" "}
-              <a href="https://jsonplaceholder.typicode.com/">
+              <a
+                className="textLink"
+                href="https://jsonplaceholder.typicode.com/"
+              >
                 <strong>JSONPlaceholder API</strong>
               </a>{" "}
               for generating kittens' personal data and{" "}
-              <a href="https://robohash.org/">
+              <a className="textLink" href="https://robohash.org/">
                 <strong>Robohash API</strong>
               </a>{" "}
               for generating their unique pictures and backgrounds from their
@@ -58,7 +62,7 @@ const KittenGeneratorPage = () => {
             <p>
               <strong>CI/CD</strong> done with <strong>circleci</strong>, with{" "}
               <strong>Jest</strong> and{" "}
-              <a href="https://enzymejs.github.io/enzyme/">
+              <a className="textLink" href="https://enzymejs.github.io/enzyme/">
                 <strong>Enzyme</strong>
               </a>{" "}
               for performing unit tests.
@@ -67,6 +71,20 @@ const KittenGeneratorPage = () => {
               Deployed the app using <strong>AWS Amplify</strong> and{" "}
               <strong>Amazon Route 53</strong> for subdomain management.
             </p>
+            <nav className="projectLinks">
+              <a
+                href="https://kittengenerator.tiagofbsantos.com/"
+                className="projectLink"
+              >
+                See Live
+              </a>
+              <a
+                href="https://github.com/tiagofbsantos/kitten-generator"
+                className="projectLink"
+              >
+                App Code
+              </a>
+            </nav>
           </article>
           <div className="technologies">
             <h2>Technologies used:</h2>
@@ -111,22 +129,15 @@ const KittenGeneratorPage = () => {
                 <NpmLogo />
               </a>
             </div>
+            <p>Progressive Web App Lighthouse Score: </p>
+            <a
+              className="pwaImg"
+              href="https://developers.google.com/web/tools/lighthouse/v3/scoring"
+            >
+              <img src={PWAScore} alt="Progressive Web App Lighthouse Score" />
+            </a>
           </div>
         </main>
-        <nav className="projectLinks">
-          <a
-            href="https://kittengenerator.tiagofbsantos.com/"
-            className="projectLink"
-          >
-            See Live
-          </a>
-          <a
-            href="https://github.com/tiagofbsantos/kitten-generator"
-            className="projectLink"
-          >
-            App Code
-          </a>
-        </nav>
       </div>
     </Fragment>
   );

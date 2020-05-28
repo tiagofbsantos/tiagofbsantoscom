@@ -27,7 +27,7 @@
   font-size: 24px;
 }
 
-.text a {
+.textLink {
   color: black;
 }
 
@@ -36,6 +36,13 @@
   max-width: 40%;
   height: auto;
   padding: 0vh 5vw 0vh 2.5vw;
+  font-family: Alphapipe;
+  font-size: 24px;
+}
+
+.technologies p {
+  padding: 3vh 0vw 1vh 0vw;
+  margin: 0;
 }
 
 .technologies h2 {
@@ -77,6 +84,15 @@
 
 .projectPageBackground .projectLinks {
   padding: 5vh 0;
+}
+
+.pwaImg {
+  max-width: 90%;
+  height: auto;
+}
+
+.pwaImg > img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {

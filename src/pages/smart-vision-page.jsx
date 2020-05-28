@@ -28,6 +28,7 @@ import EbLogo from "../assets/elastic_beanstalk.png";
 import RdsLogo from "../assets/rds.png";
 import Ec2Logo from "../assets/ec2.png";
 import ElastiCacheLogo from "../assets/elasticache.png";
+import PWAScore from "../assets/pwasmartvision.png";
 
 import "./project-page.css";
 import "../components/project/project.css";
@@ -96,6 +97,26 @@ const SmartVisionPage = () => {
               customization for enabling single instance <strong>HTTPS</strong>{" "}
               using <strong>Let's Encrypt</strong>.
             </p>
+            <nav className="projectLinks">
+              <a
+                href="https://smartvision.tiagofbsantos.com/"
+                className="projectLink"
+              >
+                See Live
+              </a>
+              <a
+                href="https://github.com/tiagofbsantos/smart-vision"
+                className="projectLink"
+              >
+                App Code
+              </a>
+              <a
+                href="https://github.com/tiagofbsantos/smart-vision-api"
+                className="projectLink"
+              >
+                API Code
+              </a>
+            </nav>
           </article>
           <div className="technologies">
             <h2>Technologies used:</h2>
@@ -179,28 +200,15 @@ const SmartVisionPage = () => {
                 <NpmLogo />
               </a>
             </div>
+            <p>Progressive Web App Lighthouse Score: </p>
+            <a
+              className="pwaImg"
+              href="https://developers.google.com/web/tools/lighthouse/v3/scoring"
+            >
+              <img src={PWAScore} alt="Progressive Web App Lighthouse Score" />
+            </a>
           </div>
         </main>
-        <nav className="projectLinks">
-          <a
-            href="https://smartvision.tiagofbsantos.com/"
-            className="projectLink"
-          >
-            See Live
-          </a>
-          <a
-            href="https://github.com/tiagofbsantos/smart-vision"
-            className="projectLink"
-          >
-            App Code
-          </a>
-          <a
-            href="https://github.com/tiagofbsantos/smart-vision-api"
-            className="projectLink"
-          >
-            API Code
-          </a>
-        </nav>
       </div>
     </Fragment>
   );

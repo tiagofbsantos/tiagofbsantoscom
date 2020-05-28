@@ -13,8 +13,7 @@
 }
 
 .miniProjects {
-  background-color: #e6eff3; /*      */
-  /* e4ebf2 NewFavorite(e6eff3) green(e7f5de) f1f3f2 f4f3f4 Favorite(ebf2ea) f2eaed */
+  background-color: #e6eff3;
   height: auto;
   text-align: center;
   display: flex;
