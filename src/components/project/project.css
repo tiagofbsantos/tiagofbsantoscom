@@ -58,7 +58,7 @@
   flex-wrap: nowrap;
 }
 
-.projectLink {
+.project .projectLink {
   margin: 2vh 1vw;
   padding: 1vh 1vw;
   text-decoration: none;
@@ -67,10 +67,25 @@
   transition: all 1s;
 }
 
-.projectLink:hover,
-.projectLink:focus {
+.miniProject .projectLink {
+  margin: 2vh 1vw;
+  padding: 1vh 1vw;
+  text-decoration: none;
+  border: solid #005eb5;
+  color: #005eb5;
+  transition: all 1s;
+}
+
+.project .projectLink:hover,
+.project .projectLink:focus {
   color: #f9f9f9;
   background-color: #0077b5;
+}
+
+.miniProject .projectLink:hover,
+.miniProject .projectLink:focus {
+  color: #f9f9f9;
+  background-color: #005eb5;
 }
 
 @media screen and (max-width: 768px) {
