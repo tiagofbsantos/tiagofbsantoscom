@@ -1,6 +1,6 @@
 import React from "react";
 import "./about-me.css";
-import ProfilePic from "../../assets/profile_pic.png";
+import ProfilePic from "../../assets/profile_pic.jpg";
 
 const AboutMe = () => {
   return (
@@ -8,7 +8,7 @@ const AboutMe = () => {
       <img className="profilePic" alt="Tiago Santos" src={ProfilePic} />
       <h1>Hi, I'm Tiago!</h1>
       <p>
-        A Full-Stack Web Developer with a Bachelor's in Computer Science and
+        A Full Stack Developer with a Bachelor's in Computer Science and
         Business Management.
       </p>
       <p>Currently looking for full time employment!</p>

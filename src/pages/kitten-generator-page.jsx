@@ -18,33 +18,42 @@ import AmplifyLogo from "../assets/amplify.png";
 import "./project-page.css";
 import "../components/project/project.css";
 
-const BenderFriendsPage = () => {
+const KittenGeneratorPage = () => {
   return (
     <Fragment>
       <Navigation page="projectPage" />
       <div className="projectPageBackground">
         <main className="projectPage">
           <article className="text">
-            <h1 className="projectTitle">Smart Vision</h1>
+            <h1 className="projectTitle">Kitten Generator</h1>
             <p>
               An interactive <strong>React</strong>{" "}
-              <strong>Single Page Progressive Web App</strong> for finding
-              bender friends.
+              <strong>Single Page Progressive Web App</strong> for generating
+              kittens.
             </p>
             <p>
               Using{" "}
               <a href="https://jsonplaceholder.typicode.com/">
                 <strong>JSONPlaceholder API</strong>
               </a>{" "}
-              for generating bender friends personal data and{" "}
+              for generating kittens' personal data and{" "}
               <a href="https://robohash.org/">
                 <strong>Robohash API</strong>
               </a>{" "}
-              for generating their unique pictures from their id.
+              for generating their unique pictures and backgrounds from their
+              names.
             </p>
             <p>
               Using <strong>Redux</strong> for better and scalable state
-              management.
+              management. Using the 3 principles:
+            </p>
+            <ul>
+              <li>single source of truth</li>
+              <li>state is read only</li>
+              <li>changes are made using pure functions</li>
+            </ul>
+            <p>
+              And the flux pattern: Action -> Reducer -> Store -> Make changes.
             </p>
             <p>
               <strong>CI/CD</strong> done with <strong>circleci</strong>, with{" "}
@@ -106,13 +115,13 @@ const BenderFriendsPage = () => {
         </main>
         <nav className="projectLinks">
           <a
-            href="https://benderfriends.tiagofbsantos.com/"
+            href="https://kittengenerator.tiagofbsantos.com/"
             className="projectLink"
           >
             See Live
           </a>
           <a
-            href="https://github.com/tiagofbsantos/bender-friends"
+            href="https://github.com/tiagofbsantos/kitten-generator"
             className="projectLink"
           >
             App Code
@@ -123,4 +132,4 @@ const BenderFriendsPage = () => {
   );
 };
 
-export default BenderFriendsPage;
+export default KittenGeneratorPage;

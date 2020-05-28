@@ -4,43 +4,44 @@ import Navigation from "../components/navigation/navigation";
 import AboutMe from "../components/about-me/about-me";
 import Projects from "../components/projects/projects";
 
-import SmartVision from "../assets/smart_vision.png";
-import BenderFriends from "../assets/bender_friends.png";
-import MeerkatApparel from "../assets/meerkat_apparel.png";
+import SmartVision from "../assets/smart_vision.jpg";
+import KittenGenerator from "../assets/kittengenerator.jpg";
+import TiagoSantosCom from "../assets/tiagofbsantos.png";
 import BackgroundGenerator from "../assets/backgroundgenerator.png";
-import Startup from "../assets/startup.png";
-import DancingDroid from "../assets/dancing_droid.png";
-import Wildlife from "../assets/wildlife.png";
+import Startup from "../assets/startup.jpg";
+import DancingDroid from "../assets/dancing_droid.gif";
+import Wildlife from "../assets/wildlife.jpg";
 
 const projectsList = [
   {
     image: SmartVision,
     name: "Smart Vision",
     description:
-      "A React Progressive Web App for detecting photos in pictures, with a PostgreSQL and Redis databases",
+      "A React Progressive Web App for detecting faces, and recognizing celebrities in pictures, with a PostgreSQL and Redis databases",
     source: "https://github.com/tiagofbsantos/smart-vision",
     apiSource: "https://github.com/tiagofbsantos/smart-vision-api",
     live: "https://smartvision.tiagofbsantos.com/",
     moreInfo: "/projects/smartvision",
   },
   {
-    image: BenderFriends,
-    name: "Bender Friends",
+    image: KittenGenerator,
+    name: "Kitten Generator",
     description:
-      "An interactive Progressive Web App with React and Redux for finding bender friends",
-    source: "https://github.com/tiagofbsantos/bender-friends",
+      "An interactive Progressive Web App with React and Redux for generating kittens",
+    source: "https://github.com/tiagofbsantos/kitten-generator",
     apiSource: "",
-    live: "https://benderfriends.tiagofbsantos.com/",
-    moreInfo: "/projects/benderfriends",
+    live: "https://kittengenerator.tiagofbsantos.com/",
+    moreInfo: "/projects/kittengenerator",
   },
   {
-    image: MeerkatApparel,
-    name: "Meerkat Apparel (early work in progress)",
-    description: "A React Progressive Web App Online Shop",
-    source: "https://github.com/tiagofbsantos/meerkat-apparel",
+    image: TiagoSantosCom,
+    name: "Tiago F. B. Santos .com",
+    description:
+      "A React Progressive Web App portfolio, to showcase my work as a Full Stack Developer",
+    source: "https://github.com/tiagofbsantos/tiagofbsantoscom",
     apiSource: "",
-    live: "https://meerkatapparel.tiagofbsantos.com/",
-    moreInfo: "",
+    live: "",
+    moreInfo: "/projects/tiagofbsantoscom",
   },
 ];
 

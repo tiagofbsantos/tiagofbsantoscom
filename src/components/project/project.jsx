@@ -18,9 +18,11 @@ const Project = ({
         <h2>{name}</h2>
         <p>{description}</p>
         <nav className="projectLinks">
-          <a href={live} className="projectLink">
-            See Live
-          </a>
+          {live !== "" && (
+            <a href={live} className="projectLink">
+              See Live
+            </a>
+          )}
           <a href={source} className="projectLink">
             App Code
           </a>

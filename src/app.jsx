@@ -1,8 +1,9 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import HomePage from "../pages/homepage";
-import SmartVisionPage from "../pages/smart-vision-page";
-import BenderFriendsPage from "../pages/bender-friends-page";
+import HomePage from "./pages/homepage";
+import SmartVisionPage from "./pages/smart-vision-page";
+import KittenGeneratorPage from "./pages/kitten-generator-page";
+import TiagoFBSantosCom from "./pages/tiagofbsantoscom-page";
 
 /* import TrackVisibility from "../components/track-visibility/track-visibility"; */
 
@@ -25,7 +26,8 @@ function App() {
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route path="/projects/smartvision" component={SmartVisionPage} />
-      <Route path="/projects/benderfriends" component={BenderFriendsPage} />
+      <Route path="/projects/kittengenerator" component={KittenGeneratorPage} />
+      <Route path="/projects/tiagofbsantoscom" component={TiagoFBSantosCom} />
     </Switch>
   );
 }

@@ -42,14 +42,15 @@ const SmartVisionPage = () => {
             <h1 className="projectTitle">Smart Vision</h1>
             <p>
               A <strong>Single Page Progressive Web App</strong> for detecting
-              faces in pictures, given a photo url.
+              faces in pictures and recognizing celebrities, given a photo url.
             </p>
             <p>
               Featuring a <strong>React</strong> frontend and a{" "}
               <strong>Node.js</strong> and <strong>Express.js</strong> backend{" "}
               <strong>RESTful API</strong> with a <strong>PostgreSQL</strong>{" "}
               and <strong>Redis</strong> databases, using the{" "}
-              <strong>Clarifai API</strong> for face recognition.
+              <strong>Clarifai API</strong> for face detection and celibrity
+              recognition.
             </p>
             <p>
               With user accounts (register and signin functionality), and user
@@ -60,6 +61,15 @@ const SmartVisionPage = () => {
               being stored in the sessionStorage of the window object. In the
               backend, session information is stored in a Redis database for
               faster access.
+            </p>
+            <p>
+              The user has a default avatar generated based on his name.
+              Changing the user name also changes the default avatar. Custom
+              avatar feature is supported.
+            </p>
+            <p>
+              User inputs are protected through validation. Using onKeyDown for
+              input enter key action support.
             </p>
             <p>
               Includes an <strong>AWS Lambda</strong> serverless function for
