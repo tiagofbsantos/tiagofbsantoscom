@@ -132,25 +132,6 @@
   fill: white;
 }
 
-.navigation button {
-  height: auto;
-  width: auto;
-  background: none;
-  border: none;
-  font-family: inherit;
-  font-size: 100%;
-  text-transform: none;
-  cursor: pointer;
-  transition: all 1s;
-}
-
-.navigation button:hover,
-.navigation button:focus {
-  background: none;
-  border: none;
-  outline: none;
-}
-
 .navRight {
   display: flex;
   flex-direction: row;

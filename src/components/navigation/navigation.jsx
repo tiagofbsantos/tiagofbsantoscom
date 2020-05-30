@@ -63,7 +63,7 @@ const Navigation = ({ page, id }) => {
           </Fragment>
         )}
         {page === "projectPage" && (
-          <Link to={`/#${id}`}>
+          <Link to={`/#${id}`} className="svgWrapper">
             <svg className="backSvg" xmlns="http://www.w3.org/2000/svg">
               <g>
                 <rect
