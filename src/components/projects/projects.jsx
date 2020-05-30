@@ -18,6 +18,7 @@ const Projects = ({ item, section, sectionTitle, projectsList }) => {
             live={project.live}
             item={item}
             moreInfo={project.moreInfo}
+            id={project.id}
           />
         );
       })}

@@ -22,6 +22,7 @@ const projectsList = [
     apiSource: "https://github.com/tiagofbsantos/smart-vision-api",
     live: "https://smartvision.tiagofbsantos.com/",
     moreInfo: "/projects/smartvision",
+    id: "smartvision",
   },
   {
     image: KittenGenerator,
@@ -32,6 +33,7 @@ const projectsList = [
     apiSource: "",
     live: "https://kittengenerator.tiagofbsantos.com/",
     moreInfo: "/projects/kittengenerator",
+    id: "kittengenerator",
   },
   {
     image: TiagoSantosCom,
@@ -42,6 +44,7 @@ const projectsList = [
     apiSource: "",
     live: "",
     moreInfo: "/projects/tiagofbsantoscom",
+    id: "tiagofbsantoscom",
   },
 ];
 

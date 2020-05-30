@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import Navigation from "../components/navigation/navigation";
+import ScrollToTop from "../components/scroll-to-top/scroll-to-top";
 
 import { ReactComponent as PwaLogo } from "../assets/pwa.svg";
 import { ReactComponent as ReactLogo } from "../assets/react.svg";
@@ -20,7 +21,8 @@ import "../components/project/project.css";
 const TiagoFBSantosCom = () => {
   return (
     <Fragment>
-      <Navigation page="projectPage" />
+      <ScrollToTop />
+      <Navigation page="projectPage" id="tiagofbsantoscom" />
       <div className="projectPageBackground">
         <main className="projectPage">
           <article className="text">

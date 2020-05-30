@@ -11,9 +11,10 @@ const Project = ({
   live,
   item,
   moreInfo,
+  id,
 }) => {
   return (
-    <section className={`${item}`}>
+    <section id={`${id}`} className={`${item}`}>
       <article className="projectText">
         <h2>{name}</h2>
         <p>{description}</p>

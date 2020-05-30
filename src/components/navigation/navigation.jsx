@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 import { ReactComponent as GitHub } from "../../assets/github.svg";
 import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg";
@@ -6,34 +7,11 @@ import { ReactComponent as Mail } from "../../assets/mail.svg";
 
 import "./navigation.css";
 
-/* <a href="#skills" className="svgWrapper">
-              <svg className="skillsSvg" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <rect
-                    x="0"
-                    y="0"
-                    className="skillsShape"
-                    height="32"
-                    width="80"
-                  />
-                  <text
-                    x="40"
-                    y="16"
-                    className="svgtext"
-                    textAnchor="middle"
-                    alignmentBaseline="central"
-                  >
-                    Skills
-                  </text>
-                </g>
-              </svg>
-            </a> */
-
-const Navigation = (page) => {
+const Navigation = ({ page, id }) => {
   return (
     <nav className="navigation">
       <nav className="navLeft">
-        {page.page === "homepage" && (
+        {page === "homepage" && (
           <Fragment>
             <a href="#projects" className="svgWrapper">
               <svg className="projectsSvg" xmlns="http://www.w3.org/2000/svg">
@@ -84,8 +62,8 @@ const Navigation = (page) => {
             </a>
           </Fragment>
         )}
-        {page.page === "projectPage" && (
-          <button className="svgWrapper" onClick={() => window.history.back()}>
+        {page === "projectPage" && (
+          <Link to={`/#${id}`}>
             <svg className="backSvg" xmlns="http://www.w3.org/2000/svg">
               <g>
                 <rect
@@ -106,7 +84,7 @@ const Navigation = (page) => {
                 </text>
               </g>
             </svg>
-          </button>
+          </Link>
         )}
       </nav>
       <nav className="navRight">
@@ -125,3 +103,26 @@ const Navigation = (page) => {
 };
 
 export default Navigation;
+
+/* <a href="#skills" className="svgWrapper">
+              <svg className="skillsSvg" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <rect
+                    x="0"
+                    y="0"
+                    className="skillsShape"
+                    height="32"
+                    width="80"
+                  />
+                  <text
+                    x="40"
+                    y="16"
+                    className="svgtext"
+                    textAnchor="middle"
+                    alignmentBaseline="central"
+                  >
+                    Skills
+                  </text>
+                </g>
+              </svg>
+            </a> */

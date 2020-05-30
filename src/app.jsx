@@ -24,10 +24,18 @@ observer.observe(projectsObserver);*/
 function App() {
   return (
     <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route path="/projects/smartvision" component={SmartVisionPage} />
-      <Route path="/projects/kittengenerator" component={KittenGeneratorPage} />
-      <Route path="/projects/tiagofbsantoscom" component={TiagoFBSantosCom} />
+      <Route exact path="/">
+        <HomePage />
+      </Route>
+      <Route path="/projects/smartvision">
+        <SmartVisionPage />
+      </Route>
+      <Route path="/projects/kittengenerator">
+        <KittenGeneratorPage />
+      </Route>
+      <Route path="/projects/tiagofbsantoscom">
+        <TiagoFBSantosCom />
+      </Route>
     </Switch>
   );
 }

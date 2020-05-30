@@ -2,13 +2,13 @@
   position: sticky;
   top: 0;
   background-color: #0077b5;
-  height: 10vh;
+  min-height: 10vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
-  /* white-space: nowrap; */
+  flex-wrap: wrap;
   padding: 0vh 5vw;
 }
 
@@ -17,8 +17,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
-  /* white-space: nowrap; */
+  flex-wrap: wrap;
 }
 
 .projectsSvg {
@@ -45,6 +44,7 @@
   margin: 0vh 0.5vw;
   padding: 2vh 0vw;
   text-align: center;
+  text-decoration: none;
 }
 
 .projectsShape {
@@ -93,30 +93,34 @@
   stroke-dashoffset: 0;
   stroke-dasharray: 285; /*Change this value to make the lines meet at the same time*/
   stroke: white;
+  text-decoration: none;
 }
 
 .svgWrapper:hover .miniProjectsShape,
 .svgWrapper:focus .miniProjectsShape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
-  stroke-dasharray: 365; /*Change this value to make the lines meet at the same time*/
+  stroke-dasharray: 365;
   stroke: white;
+  text-decoration: none;
 }
 
-.svgWrapper:hover .skillsShape,
+/* .svgWrapper:hover .skillsShape,
 .svgWrapper:focus .skillsShape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
-  stroke-dasharray: 225; /*Change this value to make the lines meet at the same time*/
+  stroke-dasharray: 225;
   stroke: white;
-}
+  text-decoration: none;
+} */
 
 .svgWrapper:hover .backShape,
 .svgWrapper:focus .backShape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
-  stroke-dasharray: 205; /*Change this value to make the lines meet at the same time*/
+  stroke-dasharray: 205;
   stroke: white;
+  text-decoration: none;
 }
 
 .svgWrapper .svgtext {
