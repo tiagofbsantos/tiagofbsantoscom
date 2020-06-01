@@ -53,7 +53,7 @@
 
 .logos {
   display: grid;
-  gap: 10px;
+  gap: 5px;
   grid-template-columns: 25% 25% 25% 25%;
   justify-items: center;
   align-items: center;
@@ -100,5 +100,9 @@
   .technologies {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .logos {
+    grid-template-columns: 33% 33% 33%;
   }
 }
