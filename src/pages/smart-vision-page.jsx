@@ -44,19 +44,20 @@ const SmartVisionPage = () => {
           <article className="text">
             <h1 className="projectTitle">Smart Vision</h1>
             <p>
-              A <strong>Single Page Progressive Web App</strong> for detecting
-              faces in pictures and recognizing celebrities, given a photo url.
+              A <strong>Single Page Responsive Progressive Web App</strong> for
+              detecting faces in pictures and recognizing celebrities, given a
+              photo url.
             </p>
             <p>
               Featuring a <strong>React</strong> frontend and a{" "}
               <strong>Node.js</strong> and <strong>Express.js</strong> backend{" "}
               <strong>RESTful API</strong> with a <strong>PostgreSQL</strong>{" "}
               and <strong>Redis</strong> databases, using the{" "}
-              <strong>Clarifai API</strong> for face detection and celibrity
+              <strong>Clarifai API</strong> for face detection and celebrity
               recognition.
             </p>
             <p>
-              With user accounts (register and signin functionality), and user
+              With user accounts (register and sign in functionality), and user
               profiles. Storing the user data in a PostgreSQL database. The
               passwords being stored in hash format encrypted with{" "}
               <strong>bcrypt-nodejs</strong>. Session functionality has also

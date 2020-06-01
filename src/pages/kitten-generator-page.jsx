@@ -31,8 +31,8 @@ const KittenGeneratorPage = () => {
             <h1 className="projectTitle">Kitten Generator</h1>
             <p>
               An interactive <strong>React</strong>{" "}
-              <strong>Single Page Progressive Web App</strong> for generating
-              kittens.
+              <strong>Single Page Responsive Progressive Web App</strong> for
+              generating kittens.
             </p>
             <p>
               Using{" "}

@@ -32,7 +32,7 @@ const TiagoFBSantosCom = () => {
               Full Stack Developer.
             </p>
             <p>
-              It's a <strong>Progressive Web App</strong>, using{" "}
+              It's a <strong>Responsive Progressive Web App</strong>, using{" "}
               <strong>React</strong> to render the components and{" "}
               <strong>React Router</strong> to navigate through the website.
             </p>
@@ -50,7 +50,7 @@ const TiagoFBSantosCom = () => {
             </p>
             <p>
               Image performance optimizations are also used to make the website
-              load faster.
+              load faster, by reducing production build size by over 81%.
             </p>
             <p>
               Deployed the app using <strong>AWS Amplify</strong> and{" "}
