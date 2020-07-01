@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
+import { ReactComponent as Medium } from "../../assets/medium.svg";
 import { ReactComponent as GitHub } from "../../assets/github.svg";
 import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg";
 import { ReactComponent as Mail } from "../../assets/mail.svg";
@@ -88,6 +89,9 @@ const Navigation = ({ page, id }) => {
         )}
       </nav>
       <nav className="navRight">
+        <a href="https://medium.com/@tiagofbsantos/deploy-https-node-postgres-redis-react-to-aws-ef252567200d?source=friends_link&sk=c153c74d65621a9d28f944a3e422338f">
+          <Medium />
+        </a>
         <a href="https://github.com/tiagofbsantos">
           <GitHub />
         </a>
