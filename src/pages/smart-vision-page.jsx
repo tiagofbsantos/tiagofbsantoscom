@@ -45,16 +45,14 @@ const SmartVisionPage = () => {
             <h1 className="projectTitle">Smart Vision</h1>
             <p>
               A <strong>Single Page Responsive Progressive Web App</strong> for
-              detecting faces in pictures and recognizing celebrities, given a
-              photo url.
+              detecting faces in pictures given a photo url.
             </p>
             <p>
               Featuring a <strong>React</strong> frontend and a{" "}
               <strong>Node.js</strong> and <strong>Express.js</strong> backend{" "}
               <strong>RESTful API</strong> with a <strong>PostgreSQL</strong>{" "}
               and <strong>Redis</strong> databases, using the{" "}
-              <strong>Clarifai API</strong> for face detection and celebrity
-              recognition.
+              <strong>Clarifai API</strong> for face detection.
             </p>
             <p>
               With user accounts (register and sign in functionality), and user

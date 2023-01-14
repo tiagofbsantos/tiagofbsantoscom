@@ -17,7 +17,7 @@ const projectsList = [
     image: SmartVision,
     name: "Smart Vision",
     description:
-      "A React Progressive Web App for detecting faces, and recognizing celebrities in pictures, with a PostgreSQL and Redis databases",
+      "A React Progressive Web App for detecting faces in pictures, with a PostgreSQL and Redis databases",
     source: "https://github.com/tiagofbsantos/smart-vision",
     apiSource: "https://github.com/tiagofbsantos/smart-vision-api",
     live: "https://smartvision.tiagofbsantos.com/",
@@ -39,7 +39,7 @@ const projectsList = [
     image: TiagoSantosCom,
     name: "Tiago F. B. Santos .com",
     description:
-      "A React Progressive Web App portfolio, to showcase my work as a Full Stack Developer",
+      "A React Progressive Web App portfolio, to showcase my work as a Full Stack Software Engineer",
     source: "https://github.com/tiagofbsantos/tiagofbsantoscom",
     apiSource: "",
     live: "",

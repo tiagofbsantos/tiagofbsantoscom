@@ -29,7 +29,7 @@ const TiagoFBSantosCom = () => {
             <h1 className="projectTitle">Tiago F. B. Santos .com</h1>
             <p>
               The personal portfolio website created to showcase my work as a
-              Full Stack Developer.
+              Full Stack Software Engineer.
             </p>
             <p>
               It's a <strong>Responsive Progressive Web App</strong>, using{" "}
