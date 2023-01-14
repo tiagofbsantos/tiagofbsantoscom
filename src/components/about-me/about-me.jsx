@@ -8,10 +8,10 @@ const AboutMe = () => {
       <img className="profilePic" alt="Tiago Santos" src={ProfilePic} />
       <h1>Hi, I'm Tiago!</h1>
       <p>
-        A Full Stack Developer with a Bachelor's in Computer Science and
+        A Full Stack Software Engineer with a Bachelor's in Computer Science and
         Business Management.
       </p>
-      <p>Currently looking for full time employment!</p>
+      <p>I build web applications in Typescript, React and Node.</p>
       <p>Contact me at santosfbtiago@gmail.com</p>
     </header>
   );
