@@ -9,10 +9,9 @@ const AboutMe = () => {
       <h1>Hi, I'm Tiago!</h1>
       <p>
         A Full Stack Software Engineer with a Bachelor's in Computer Science and
-        Business Management.
+        Business Management
       </p>
-      <p>I build web applications in Typescript, React and Node.</p>
-      <p>Contact me at santosfbtiago@gmail.com</p>
+      <p>I build web applications in Typescript, Node.js and React</p>
     </header>
   );
 };
