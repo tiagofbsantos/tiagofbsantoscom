@@ -11,7 +11,7 @@ const AboutMe = () => {
         Lead Software Engineer with a Bsc. in Computer Science and
         Business Management
       </p>
-      <p>I build web applications in Typescript, Node.js and React</p>
+      <p>I build full-stack web applications in Typescript, Node.js and React</p>
     </header>
   );
 };
