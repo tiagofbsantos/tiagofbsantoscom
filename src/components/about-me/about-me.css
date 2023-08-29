@@ -1,14 +1,19 @@
 .aboutMe {
   height: 100%;
   min-height: 90vh;
-  background-color: #0077b5; /*0EB0D7*/ /*#4457C0*/
+  background-color: #0077b5;
   text-align: center;
   padding: 10vh 10vw;
 }
 
+.aboutMe h1 {
+  font-family: "Avenir Roman";
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+
 .aboutMe p {
-  font-family: Alphapipe;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .profilePic {

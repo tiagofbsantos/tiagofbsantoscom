@@ -14,7 +14,9 @@
   padding: 5vh 0vw;
   margin: 0px;
   text-align: center;
-  font-family: "Aquatico-Regular";
+  font-family: "Avenir Roman";
+  letter-spacing: 2px;
+  font-size: 46px;
 }
 
 .text {
@@ -23,7 +25,7 @@
   height: auto;
   padding: 0vh 2.5vw 0vh 5vw;
   overflow-wrap: break-word;
-  font-family: Alphapipe;
+  font-family: "Futura PT Light";
   font-size: 24px;
 }
 
@@ -36,7 +38,7 @@
   max-width: 40%;
   height: auto;
   padding: 0vh 5vw 0vh 2.5vw;
-  font-family: Alphapipe;
+  font-family: "Futura PT Light";
   font-size: 24px;
 }
 
@@ -59,7 +61,7 @@
   align-items: center;
 }
 
-.logos > a {
+.logos>a {
   margin: 1vh 1vw;
 }
 
@@ -91,11 +93,12 @@
   height: auto;
 }
 
-.pwaImg > img {
+.pwaImg>img {
   width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
+
   .text,
   .technologies {
     flex: 100%;

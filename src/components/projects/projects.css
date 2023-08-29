@@ -7,9 +7,13 @@
   justify-content: space-evenly;
 }
 
-.projects > h1 {
+.projects>h1 {
   padding: 10vh 10vw 0vh 10vw;
   margin: 0px;
+  font-family: "Avenir Roman";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 38px;
 }
 
 .miniProjects {
@@ -21,8 +25,11 @@
   justify-content: space-evenly;
 }
 
-.miniProjects > h1 {
+.miniProjects>h1 {
   padding: 10vh 10vw 0vh 10vw;
   margin: 0px;
-  font-size: 32px;
+  font-family: "Avenir Roman";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 38px;
 }

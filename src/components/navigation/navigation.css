@@ -45,11 +45,16 @@
   padding: 2vh 0vw;
   text-align: center;
   text-decoration: none;
+  font-family: "Avenir Roman";
+  letter-spacing: 0px;
+  text-transform: uppercase;
 }
 
 .projectsShape {
-  stroke-dasharray: 65 270; /*#length of underline #don't touch*/
-  stroke-dashoffset: -165; /*position of underline, x axis => +goes right -goes left*/
+  stroke-dasharray: 65 270;
+  /*#length of underline #don't touch*/
+  stroke-dashoffset: -165;
+  /*position of underline, x axis => +goes right -goes left*/
   stroke-width: 6px;
   fill: transparent;
   stroke: black;
@@ -58,8 +63,10 @@
 }
 
 .miniProjectsShape {
-  stroke-dasharray: 95 270; /*#length of underline #don't touch | speed of animation*/
-  stroke-dashoffset: -210; /*position of underline, x axis => +goes right -goes left*/
+  stroke-dasharray: 95 270;
+  /*#length of underline #don't touch | speed of animation*/
+  stroke-dashoffset: -210;
+  /*position of underline, x axis => +goes right -goes left*/
   stroke-width: 6px;
   fill: transparent;
   stroke: black;
@@ -68,8 +75,10 @@
 }
 
 .skillsShape {
-  stroke-dasharray: 40 270; /*#length of underline #don't touch*/
-  stroke-dashoffset: -132; /*position of underline, x axis => +goes right -goes left*/
+  stroke-dasharray: 40 270;
+  /*#length of underline #don't touch*/
+  stroke-dashoffset: -132;
+  /*position of underline, x axis => +goes right -goes left*/
   stroke-width: 6px;
   fill: transparent;
   stroke: black;
@@ -78,8 +87,10 @@
 }
 
 .backShape {
-  stroke-dasharray: 35 270; /*#length of underline #don't touch*/
-  stroke-dashoffset: -120; /*position of underline, x axis => +goes right -goes left*/
+  stroke-dasharray: 35 270;
+  /*#length of underline #don't touch*/
+  stroke-dashoffset: -120;
+  /*position of underline, x axis => +goes right -goes left*/
   stroke-width: 6px;
   fill: transparent;
   stroke: black;
@@ -91,7 +102,8 @@
 .svgWrapper:focus .projectsShape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
-  stroke-dasharray: 285; /*Change this value to make the lines meet at the same time*/
+  stroke-dasharray: 285;
+  /*Change this value to make the lines meet at the same time*/
   stroke: white;
   text-decoration: none;
 }
@@ -125,6 +137,7 @@
 
 .svgWrapper .svgtext {
   transition: all 1s;
+  font-size: 18px;
 }
 
 .svgWrapper:hover .svgtext,
@@ -139,7 +152,7 @@
   align-items: center;
 }
 
-.navRight > a {
+.navRight>a {
   margin: 0vh 1vw;
   transition: all 1s;
 }

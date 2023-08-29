@@ -107,26 +107,3 @@ const Navigation = ({ page, id }) => {
 };
 
 export default Navigation;
-
-/* <a href="#skills" className="svgWrapper">
-              <svg className="skillsSvg" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                  <rect
-                    x="0"
-                    y="0"
-                    className="skillsShape"
-                    height="32"
-                    width="80"
-                  />
-                  <text
-                    x="40"
-                    y="16"
-                    className="svgtext"
-                    textAnchor="middle"
-                    alignmentBaseline="central"
-                  >
-                    Skills
-                  </text>
-                </g>
-              </svg>
-            </a> */

@@ -1,24 +1,21 @@
 @font-face {
-  font-display: swap;
-  font-family: "Aquatico-Regular";
+  font-family: 'Futura PT Light';
   font-style: normal;
   font-weight: normal;
-  src: local("Aquatico-Regular"),
-    url("./assets/aquatico-regular.woff") format("woff");
+  src: local('Futura PT Light'), url('./assets/FuturaCyrillicLight.woff') format('woff');
 }
 
 @font-face {
-  font-display: swap;
-  font-family: "Alphapipe";
+  font-family: "Avenir Roman";
   font-style: normal;
   font-weight: normal;
-  src: local("Alphapipe"),
-    url("./assets/bc_alphapipe_rb_regular.woff") format("woff");
+  src: local("Avenir Roman"), url("./assets/AvenirLTStd-Roman.otf") format("opentype");
 }
 
 body {
   margin: 0;
-  font-family: "Aquatico-Regular";
+  font-family: "Futura PT Light";
+  letter-spacing: 0.5px;
   color: black;
 }
 
