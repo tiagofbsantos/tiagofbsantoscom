@@ -1,28 +1,71 @@
 import Navigation from "../components/navigation/navigation";
 import ExternalLink from "../components/external-link/external-link";
+import TechLogo from "../components/tech-logo/tech-logo";
 
-import PwaLogo from "../assets/pwa.svg?react";
-import ReactLogo from "../assets/react.svg?react";
-import Route53Logo from "../assets/route53.svg?react";
-import JsLogo from "../assets/javascript.svg?react";
-import CssLogo from "../assets/css.svg?react";
-import HtmlLogo from "../assets/html5.svg?react";
-import GitLogo from "../assets/git.svg?react";
-import GithubLogo from "../assets/github.svg?react";
-import NpmLogo from "../assets/npm.svg?react";
-import ReactRouterLogo from "../assets/reactrouter.svg?react";
-import AmplifyLogo from "../assets/amplify.png";
-import PWAScore from "../assets/pwatiagofbsantoscom.png";
+import pwaLogo from "../assets/pwa.svg?url";
+import reactLogo from "../assets/react.svg?url";
+import route53Logo from "../assets/route53.svg?url";
+import tsLogo from "../assets/typescript.svg?url";
+import cssLogo from "../assets/css.svg?url";
+import htmlLogo from "../assets/html5.svg?url";
+import gitLogo from "../assets/git.svg?url";
+import githubLogo from "../assets/github.svg?url";
+import npmLogo from "../assets/npm.svg?url";
+import reactRouterLogo from "../assets/reactrouter.svg?url";
+import amplifyLogo from "../assets/amplify.png";
+import pwaScore from "../assets/pwatiagofbsantoscom.png";
 
 import "./project-page.css";
 import "../components/project/project.css";
+
+const logos = [
+  {
+    href: "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
+    src: pwaLogo,
+    label: "Progressive Web Apps",
+  },
+  { href: "https://react.dev/", src: reactLogo, label: "React" },
+  {
+    href: "https://reactrouter.com/",
+    src: reactRouterLogo,
+    label: "React Router",
+  },
+  {
+    href: "https://www.typescriptlang.org/",
+    src: tsLogo,
+    label: "TypeScript",
+  },
+  {
+    href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    src: cssLogo,
+    label: "CSS",
+  },
+  {
+    href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    src: htmlLogo,
+    label: "HTML",
+  },
+  {
+    href: "https://aws.amazon.com/amplify/",
+    src: amplifyLogo,
+    label: "AWS Amplify",
+  },
+  {
+    href: "https://aws.amazon.com/route53/",
+    src: route53Logo,
+    label: "Amazon Route 53",
+  },
+  { href: "https://git-scm.com/", src: gitLogo, label: "Git" },
+  { href: "https://github.com/", src: githubLogo, label: "GitHub" },
+  { href: "https://www.npmjs.com/", src: npmLogo, label: "npm" },
+];
 
 export default function TiagoFBSantosCom() {
   return (
     <>
       <Navigation page="projectPage" id="tiagofbsantoscom" />
       <div className="projectPageBackground">
-        <main className="projectPage">
+        <main id="main" tabIndex={-1} className="projectPage">
           <article className="text">
             <h1 className="projectTitle">Tiago F. B. Santos .com</h1>
             <p>
@@ -30,13 +73,13 @@ export default function TiagoFBSantosCom() {
               Lead Software Engineer.
             </p>
             <p>
-              It's a <strong>Responsive Progressive Web App</strong>, using{" "}
-              <strong>React</strong> to render the components and{" "}
-              <strong>React Router</strong> to navigate through the website.
+              It is a <strong>Responsive Progressive Web App</strong> built with{" "}
+              <strong>Vite</strong>, <strong>TypeScript</strong>,{" "}
+              <strong>React</strong>, and <strong>React Router</strong>.
             </p>
             <p>
               Including several animations in <strong>CSS3</strong> and{" "}
-              <strong>svg</strong>. Using <strong>semantic HTML5</strong>.
+              <strong>SVG</strong>. Using <strong>semantic HTML5</strong>.
             </p>
             <p>
               The projects and mini projects sections of the website are built
@@ -47,8 +90,9 @@ export default function TiagoFBSantosCom() {
               section titles and appropriate CSS classes to use.
             </p>
             <p>
-              Image performance optimizations are also used to make the website
-              load faster, by reducing production build size by over 81%.
+              Project screenshots and the profile photo ship as{" "}
+              <strong>AVIF</strong> and <strong>WebP</strong> with JPEG
+              fallbacks so the first load stays small.
             </p>
             <p>
               Deployed the app using <strong>AWS Amplify</strong> and{" "}
@@ -66,76 +110,18 @@ export default function TiagoFBSantosCom() {
           <div className="technologies">
             <h2>Technologies used:</h2>
             <div className="logos">
-              <ExternalLink
-                href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
-                aria-label="Progressive Web Apps"
-              >
-                <PwaLogo aria-hidden="true" />
-              </ExternalLink>
-              <ExternalLink href="https://reactjs.org/" aria-label="React">
-                <ReactLogo aria-hidden="true" />
-              </ExternalLink>
-              <ExternalLink
-                href="https://reacttraining.com/react-router/"
-                aria-label="React Router"
-              >
-                <ReactRouterLogo aria-hidden="true" />
-              </ExternalLink>
-              <ExternalLink
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                aria-label="JavaScript"
-              >
-                <JsLogo aria-hidden="true" />
-              </ExternalLink>
-              <ExternalLink
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                aria-label="CSS"
-              >
-                <CssLogo aria-hidden="true" />
-              </ExternalLink>
-              <ExternalLink
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                aria-label="HTML"
-              >
-                <HtmlLogo aria-hidden="true" />
-              </ExternalLink>
-              <ExternalLink
-                href="https://aws.amazon.com/amplify/"
-                aria-label="AWS Amplify"
-              >
-                <img
-                  src={AmplifyLogo}
-                  alt=""
-                  width={135}
-                  height={100}
-                  loading="lazy"
-                  decoding="async"
-                />
-              </ExternalLink>
-              <ExternalLink
-                href="https://aws.amazon.com/route53/"
-                aria-label="Amazon Route 53"
-              >
-                <Route53Logo aria-hidden="true" />
-              </ExternalLink>
-              <ExternalLink href="https://git-scm.com/" aria-label="Git">
-                <GitLogo aria-hidden="true" />
-              </ExternalLink>
-              <ExternalLink href="https://github.com/" aria-label="GitHub">
-                <GithubLogo aria-hidden="true" />
-              </ExternalLink>
-              <ExternalLink href="https://www.npmjs.com/" aria-label="npm">
-                <NpmLogo aria-hidden="true" />
-              </ExternalLink>
+              {logos.map((logo) => (
+                <TechLogo key={logo.label} {...logo} />
+              ))}
             </div>
             <p>Progressive Web App Lighthouse Score: </p>
             <ExternalLink
               className="pwaImg"
-              href="https://developers.google.com/web/tools/lighthouse/v3/scoring"
-              aria-label="Progressive Web App Lighthouse scoring"
+              href="https://developer.chrome.com/docs/lighthouse/overview"
+              aria-label="Lighthouse scoring"
             >
               <img
-                src={PWAScore}
+                src={pwaScore}
                 alt="Progressive Web App Lighthouse Score"
                 width={500}
                 height={127}

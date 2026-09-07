@@ -7,7 +7,7 @@ export default function NotFoundPage() {
   return (
     <>
       <Navigation page="notFound" />
-      <main className="notFound">
+      <main id="main" tabIndex={-1} className="notFound">
         <h1>Page not found</h1>
         <p>That address is not a page on this site.</p>
         <Link to="/" className="projectLink">

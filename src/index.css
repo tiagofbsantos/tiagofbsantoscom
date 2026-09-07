@@ -32,6 +32,29 @@ body {
   outline-offset: 3px;
 }
 
+.skipLink {
+  position: absolute;
+  left: -9999px;
+  top: 0.75rem;
+  z-index: 100;
+  padding: 0.5rem 0.75rem;
+  background: #000;
+  color: #fff;
+  font-family: "Avenir Roman";
+  text-decoration: none;
+}
+
+.skipLink:focus,
+.skipLink:focus-visible {
+  left: 0.75rem;
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+#main:focus {
+  outline: none;
+}
+
 .routeFallback {
   min-height: 100vh;
   background: #f9f9f9;

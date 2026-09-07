@@ -16,6 +16,9 @@ function RouteFallback() {
 function App() {
   return (
     <>
+      <a className="skipLink" href="#main">
+        Skip to content
+      </a>
       <ScrollToTop />
       <DocumentMeta />
       <Suspense fallback={<RouteFallback />}>

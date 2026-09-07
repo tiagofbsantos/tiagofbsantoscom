@@ -31,11 +31,6 @@
   width: 150px;
 }
 
-.skillsSvg {
-  height: 32px;
-  width: 80px;
-}
-
 .backSvg {
   height: 32px;
   width: 70px;
@@ -67,18 +62,6 @@
   stroke-dasharray: 95 270;
   /*#length of underline #don't touch | speed of animation*/
   stroke-dashoffset: -210;
-  /*position of underline, x axis => +goes right -goes left*/
-  stroke-width: 6px;
-  fill: transparent;
-  stroke: black;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s,
-    stroke 1s;
-}
-
-.skillsShape {
-  stroke-dasharray: 40 270;
-  /*#length of underline #don't touch*/
-  stroke-dashoffset: -132;
   /*position of underline, x axis => +goes right -goes left*/
   stroke-width: 6px;
   fill: transparent;

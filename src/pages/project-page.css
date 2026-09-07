@@ -77,8 +77,9 @@
 }
 
 .logos img {
-  width: auto;
-  height: 80px;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
   transition: all 1s;
 }
 

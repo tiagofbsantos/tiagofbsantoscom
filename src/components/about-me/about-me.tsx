@@ -22,10 +22,10 @@ export default function AboutMe() {
       </div>
       <h1>Hi, I'm Tiago!</h1>
       <p>
-        Lead Software Engineer with a Bsc. in Computer Science and
+        Lead Software Engineer with a BSc. in Computer Science and
         Business Management
       </p>
-      <p>I build full-stack web applications in Typescript, Node.js and React</p>
+      <p>I build full-stack web applications in TypeScript, Node.js and React</p>
     </header>
   );
 }

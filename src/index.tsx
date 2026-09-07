@@ -19,4 +19,4 @@ createRoot(rootElement).render(
   </StrictMode>
 );
 
-registerSW({ immediate: true });
+registerSW();

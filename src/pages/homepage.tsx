@@ -7,8 +7,8 @@ export default function HomePage() {
   return (
     <>
       <Navigation page="homepage" />
-      <AboutMe />
-      <main>
+      <main id="main" tabIndex={-1}>
+        <AboutMe />
         <Projects
           item="project"
           section="projects"
