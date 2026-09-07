@@ -5,7 +5,9 @@ import ProfilePic from "../../assets/profile_pic.jpg";
 const AboutMe = () => {
   return (
     <header className="aboutMe">
-      <img className="profilePic" alt="Tiago Santos" src={ProfilePic} />
+      <div className="profilePicWrap">
+        <img className="profilePic" alt="Tiago Santos" src={ProfilePic} />
+      </div>
       <h1>Hi, I'm Tiago!</h1>
       <p>
         Lead Software Engineer with a Bsc. in Computer Science and
