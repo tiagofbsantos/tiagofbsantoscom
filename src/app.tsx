@@ -1,28 +1,36 @@
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homepage";
-import SmartVisionPage from "./pages/smart-vision-page";
-import KittenGeneratorPage from "./pages/kitten-generator-page";
-import TiagoFBSantosCom from "./pages/tiagofbsantoscom-page";
 import NotFoundPage from "./pages/not-found-page";
 import ScrollToTop from "./components/scroll-to-top/scroll-to-top";
+
+const SmartVisionPage = lazy(() => import("./pages/smart-vision-page"));
+const KittenGeneratorPage = lazy(() => import("./pages/kitten-generator-page"));
+const TiagoFBSantosCom = lazy(() => import("./pages/tiagofbsantoscom-page"));
+
+function RouteFallback() {
+  return <div className="routeFallback" role="status" aria-label="Loading" />;
+}
 
 function App() {
   return (
     <>
       <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/projects/smartvision" element={<SmartVisionPage />} />
-        <Route
-          path="/projects/kittengenerator"
-          element={<KittenGeneratorPage />}
-        />
-        <Route
-          path="/projects/tiagofbsantoscom"
-          element={<TiagoFBSantosCom />}
-        />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
+      <Suspense fallback={<RouteFallback />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects/smartvision" element={<SmartVisionPage />} />
+          <Route
+            path="/projects/kittengenerator"
+            element={<KittenGeneratorPage />}
+          />
+          <Route
+            path="/projects/tiagofbsantoscom"
+            element={<TiagoFBSantosCom />}
+          />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Suspense>
     </>
   );
 }

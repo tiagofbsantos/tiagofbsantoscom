@@ -26,6 +26,12 @@
   background-color: #e4e4e6;
 }
 
+.profilePicWrap picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .profilePic {
   display: block;
   width: 100%;

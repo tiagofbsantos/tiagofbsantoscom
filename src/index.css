@@ -2,14 +2,16 @@
   font-family: 'Futura PT Light';
   font-style: normal;
   font-weight: normal;
-  src: local('Futura PT Light'), url('./assets/FuturaCyrillicLight.woff') format('woff');
+  font-display: swap;
+  src: local('Futura PT Light'), url('./assets/FuturaCyrillicLight.woff2') format('woff2');
 }
 
 @font-face {
   font-family: "Avenir Roman";
   font-style: normal;
   font-weight: normal;
-  src: local("Avenir Roman"), url("./assets/AvenirLTStd-Roman.otf") format("opentype");
+  font-display: swap;
+  src: local("Avenir Roman"), url("./assets/AvenirLTStd-Roman.woff2") format("woff2");
 }
 
 body {
@@ -28,6 +30,18 @@ body {
 :focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
+}
+
+.routeFallback {
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+
+.routeFallback::before {
+  content: "";
+  display: block;
+  height: 10vh;
+  background: #1a86c8;
 }
 
 @media (prefers-reduced-motion: reduce) {

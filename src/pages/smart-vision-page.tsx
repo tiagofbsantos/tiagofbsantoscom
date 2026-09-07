@@ -219,42 +219,84 @@ export default function SmartVisionPage() {
                 href="https://aws.amazon.com/lambda/"
                 aria-label="AWS Lambda"
               >
-                <img src={LambdaLogo} alt="" />
+                <img
+                  src={LambdaLogo}
+                  alt=""
+                  width={65}
+                  height={100}
+                  loading="lazy"
+                  decoding="async"
+                />
               </ExternalLink>
 
               <ExternalLink
                 href="https://aws.amazon.com/elasticbeanstalk/"
                 aria-label="AWS Elastic Beanstalk"
               >
-                <img src={EbLogo} alt="" />
+                <img
+                  src={EbLogo}
+                  alt=""
+                  width={110}
+                  height={100}
+                  loading="lazy"
+                  decoding="async"
+                />
               </ExternalLink>
 
               <ExternalLink
                 href="https://aws.amazon.com/elasticache/"
                 aria-label="Amazon ElastiCache"
               >
-                <img src={ElastiCacheLogo} alt="" />
+                <img
+                  src={ElastiCacheLogo}
+                  alt=""
+                  width={70}
+                  height={100}
+                  loading="lazy"
+                  decoding="async"
+                />
               </ExternalLink>
 
               <ExternalLink
                 href="https://aws.amazon.com/rds/"
                 aria-label="Amazon RDS"
               >
-                <img src={RdsLogo} alt="" />
+                <img
+                  src={RdsLogo}
+                  alt=""
+                  width={98}
+                  height={175}
+                  loading="lazy"
+                  decoding="async"
+                />
               </ExternalLink>
 
               <ExternalLink
                 href="https://aws.amazon.com/ec2/"
                 aria-label="Amazon EC2"
               >
-                <img src={Ec2Logo} alt="" />
+                <img
+                  src={Ec2Logo}
+                  alt=""
+                  width={55}
+                  height={100}
+                  loading="lazy"
+                  decoding="async"
+                />
               </ExternalLink>
 
               <ExternalLink
                 href="https://aws.amazon.com/amplify/"
                 aria-label="AWS Amplify"
               >
-                <img src={AmplifyLogo} alt="" />
+                <img
+                  src={AmplifyLogo}
+                  alt=""
+                  width={135}
+                  height={100}
+                  loading="lazy"
+                  decoding="async"
+                />
               </ExternalLink>
 
               <ExternalLink
@@ -295,7 +337,14 @@ export default function SmartVisionPage() {
               href="https://developers.google.com/web/tools/lighthouse/v3/scoring"
               aria-label="Progressive Web App Lighthouse scoring"
             >
-              <img src={PWAScore} alt="Progressive Web App Lighthouse Score" />
+              <img
+                src={PWAScore}
+                alt="Progressive Web App Lighthouse Score"
+                width={500}
+                height={124}
+                loading="lazy"
+                decoding="async"
+              />
             </ExternalLink>
           </div>
         </main>

@@ -132,7 +132,14 @@ export default function KittenGeneratorPage() {
                 href="https://aws.amazon.com/amplify/"
                 aria-label="AWS Amplify"
               >
-                <img src={AmplifyLogo} alt="" />
+                <img
+                  src={AmplifyLogo}
+                  alt=""
+                  width={135}
+                  height={100}
+                  loading="lazy"
+                  decoding="async"
+                />
               </ExternalLink>
               <ExternalLink
                 href="https://aws.amazon.com/route53/"
@@ -156,7 +163,14 @@ export default function KittenGeneratorPage() {
               href="https://developers.google.com/web/tools/lighthouse/v3/scoring"
               aria-label="Progressive Web App Lighthouse scoring"
             >
-              <img src={PWAScore} alt="Progressive Web App Lighthouse Score" />
+              <img
+                src={PWAScore}
+                alt="Progressive Web App Lighthouse Score"
+                width={500}
+                height={125}
+                loading="lazy"
+                decoding="async"
+              />
             </ExternalLink>
           </div>
         </main>

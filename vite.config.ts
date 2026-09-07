@@ -57,7 +57,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: [
-          "**/*.{js,css,html,ico,png,svg,jpg,jpeg,gif,woff,otf,webmanifest}",
+          "**/*.{js,css,html,ico,png,svg,gif,webp,avif,woff2,webmanifest}",
         ],
         navigateFallback: "/index.html",
         navigateFallbackDenylist: [/^\/offline\.html$/],

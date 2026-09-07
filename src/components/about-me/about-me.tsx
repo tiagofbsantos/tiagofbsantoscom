@@ -1,11 +1,24 @@
 import "./about-me.css";
-import ProfilePic from "../../assets/profile_pic.jpg";
+import Picture from "../picture/picture";
+import profileAvif from "../../assets/profile_pic.avif";
+import profileWebp from "../../assets/profile_pic.webp";
+import profileJpg from "../../assets/profile_pic.jpg";
 
 export default function AboutMe() {
   return (
     <header className="aboutMe">
       <div className="profilePicWrap">
-        <img className="profilePic" alt="Tiago Santos" src={ProfilePic} />
+        <Picture
+          className="profilePic"
+          alt="Tiago Santos"
+          src={profileJpg}
+          avif={profileAvif}
+          webp={profileWebp}
+          width={947}
+          height={960}
+          loading="eager"
+          fetchPriority="high"
+        />
       </div>
       <h1>Hi, I'm Tiago!</h1>
       <p>

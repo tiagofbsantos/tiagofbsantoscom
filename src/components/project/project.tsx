@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import type { ProjectItem } from "../../data/projects";
 import ExternalLink from "../external-link/external-link";
+import Picture from "../picture/picture";
 import "./project.css";
 
 export type ProjectCardItem = "project" | "miniProject";
@@ -47,7 +48,14 @@ export default function Project({
         </nav>
       </div>
       <div className="projectImg">
-        <img alt={name} src={image} />
+        <Picture
+          src={image.src}
+          avif={image.avif}
+          webp={image.webp}
+          alt={name}
+          width={image.width}
+          height={image.height}
+        />
       </div>
     </article>
   );

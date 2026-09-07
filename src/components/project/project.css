@@ -40,11 +40,15 @@
   height: auto;
 }
 
-.projectImg>img {
+.projectImg picture {
+  display: block;
   width: 100%;
+}
+
+.projectImg img {
+  width: 100%;
+  height: auto;
   box-shadow: 10px 10px 30px black;
-  /*opacity: 0;
-	transition: opacity 250ms ease-in;*/
 }
 
 .projectText {
