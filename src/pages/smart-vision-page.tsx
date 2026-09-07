@@ -1,26 +1,25 @@
-import React from "react";
 import Navigation from "../components/navigation/navigation";
 
-import { ReactComponent as PwaLogo } from "../assets/pwa.svg";
-import { ReactComponent as ReactLogo } from "../assets/react.svg";
-import { ReactComponent as NodeLogo } from "../assets/node.svg";
-import { ReactComponent as ExpressLogo } from "../assets/express.svg";
-import { ReactComponent as PostgresLogo } from "../assets/postgresql.svg";
-import { ReactComponent as RedisLogo } from "../assets/redis.svg";
-import { ReactComponent as DockerLogo } from "../assets/docker.svg";
-import { ReactComponent as YamlLogo } from "../assets/yaml.svg";
-import { ReactComponent as Route53Logo } from "../assets/route53.svg";
-import { ReactComponent as NginxLogo } from "../assets/nginx.svg";
-import { ReactComponent as LetsEncryptLogo } from "../assets/letsencrypt.svg";
-import { ReactComponent as TsLogo } from "../assets/typescript.svg";
-import { ReactComponent as CssLogo } from "../assets/css.svg";
-import { ReactComponent as HtmlLogo } from "../assets/html5.svg";
-import { ReactComponent as ClarifaiLogo } from "../assets/clarifai.svg";
-import { ReactComponent as JwtLogo } from "../assets/jwt.svg";
-import { ReactComponent as ComposeLogo } from "../assets/docker_compose.svg";
-import { ReactComponent as GitLogo } from "../assets/git.svg";
-import { ReactComponent as GithubLogo } from "../assets/github.svg";
-import { ReactComponent as NpmLogo } from "../assets/npm.svg";
+import PwaLogo from "../assets/pwa.svg?react";
+import ReactLogo from "../assets/react.svg?react";
+import NodeLogo from "../assets/node.svg?react";
+import ExpressLogo from "../assets/express.svg?react";
+import PostgresLogo from "../assets/postgresql.svg?react";
+import RedisLogo from "../assets/redis.svg?react";
+import DockerLogo from "../assets/docker.svg?react";
+import YamlLogo from "../assets/yaml.svg?react";
+import Route53Logo from "../assets/route53.svg?react";
+import NginxLogo from "../assets/nginx.svg?react";
+import LetsEncryptLogo from "../assets/letsencrypt.svg?react";
+import TsLogo from "../assets/typescript.svg?react";
+import CssLogo from "../assets/css.svg?react";
+import HtmlLogo from "../assets/html5.svg?react";
+import ClarifaiLogo from "../assets/clarifai.svg?react";
+import JwtLogo from "../assets/jwt.svg?react";
+import ComposeLogo from "../assets/docker_compose.svg?react";
+import GitLogo from "../assets/git.svg?react";
+import GithubLogo from "../assets/github.svg?react";
+import NpmLogo from "../assets/npm.svg?react";
 
 import LambdaLogo from "../assets/lambda.png";
 import AmplifyLogo from "../assets/amplify.png";
@@ -33,7 +32,7 @@ import PWAScore from "../assets/pwasmartvision.png";
 import "./project-page.css";
 import "../components/project/project.css";
 
-const SmartVisionPage = () => {
+export default function SmartVisionPage() {
   return (
     <>
       <Navigation page="projectPage" id="smartvision" />
@@ -48,9 +47,10 @@ const SmartVisionPage = () => {
             </p>
 
             <p>
-              Originally written in <strong>Javascript</strong> using <strong>React</strong>{" "}
-              class components and .then. Refactored to use <strong>Typescript</strong>,{" "}
-              <strong>React</strong> functional components and async await.
+              Originally written in <strong>Javascript</strong> using{" "}
+              <strong>React</strong> class components and .then. Refactored to
+              use <strong>Typescript</strong>, <strong>React</strong> functional
+              components and async await.
             </p>
 
             <p>
@@ -74,11 +74,11 @@ const SmartVisionPage = () => {
               With user accounts (register and sign in functionality), and user
               profiles. Storing the user data in a PostgreSQL database. The
               passwords being stored in hash format encrypted with{" "}
-              <strong>bcrypt</strong>. Session functionality has also
-              been added using <strong>JSON Web Token</strong>, with the token
-              being stored in the sessionStorage of the window object. In the
-              backend, session information is stored in a Redis database for
-              faster access.
+              <strong>bcrypt</strong>. Session functionality has also been added
+              using <strong>JSON Web Token</strong>, with the token being stored
+              in the sessionStorage of the window object. In the backend,
+              session information is stored in a Redis database for faster
+              access.
             </p>
 
             <p>
@@ -267,6 +267,4 @@ const SmartVisionPage = () => {
       </div>
     </>
   );
-};
-
-export default SmartVisionPage;
+}

@@ -5,16 +5,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
   plugins: [
-    svgr({
-      include: "**/*.svg",
-      svgrOptions: {
-        exportType: "named",
-        namedExport: "ReactComponent",
-        ref: true,
-        titleProp: true,
-        svgo: false,
-      },
-    }),
+    svgr(),
     react(),
     VitePWA({
       registerType: "prompt",

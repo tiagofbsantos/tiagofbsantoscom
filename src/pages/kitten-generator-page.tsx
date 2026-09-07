@@ -1,27 +1,26 @@
-import React, { Fragment } from "react";
 import Navigation from "../components/navigation/navigation";
 
-import { ReactComponent as PwaLogo } from "../assets/pwa.svg";
-import { ReactComponent as ReactLogo } from "../assets/react.svg";
-import { ReactComponent as Route53Logo } from "../assets/route53.svg";
-import { ReactComponent as JsLogo } from "../assets/javascript.svg";
-import { ReactComponent as CssLogo } from "../assets/css.svg";
-import { ReactComponent as HtmlLogo } from "../assets/html5.svg";
-import { ReactComponent as GitLogo } from "../assets/git.svg";
-import { ReactComponent as GithubLogo } from "../assets/github.svg";
-import { ReactComponent as NpmLogo } from "../assets/npm.svg";
-import { ReactComponent as JestLogo } from "../assets/jest.svg";
-import { ReactComponent as ReduxLogo } from "../assets/redux.svg";
-import { ReactComponent as CircleciLogo } from "../assets/circleci.svg";
+import PwaLogo from "../assets/pwa.svg?react";
+import ReactLogo from "../assets/react.svg?react";
+import Route53Logo from "../assets/route53.svg?react";
+import JsLogo from "../assets/javascript.svg?react";
+import CssLogo from "../assets/css.svg?react";
+import HtmlLogo from "../assets/html5.svg?react";
+import GitLogo from "../assets/git.svg?react";
+import GithubLogo from "../assets/github.svg?react";
+import NpmLogo from "../assets/npm.svg?react";
+import JestLogo from "../assets/jest.svg?react";
+import ReduxLogo from "../assets/redux.svg?react";
+import CircleciLogo from "../assets/circleci.svg?react";
 import AmplifyLogo from "../assets/amplify.png";
 import PWAScore from "../assets/pwakittengenerator.png";
 
 import "./project-page.css";
 import "../components/project/project.css";
 
-const KittenGeneratorPage = () => {
+export default function KittenGeneratorPage() {
   return (
-    <Fragment>
+    <>
       <Navigation page="projectPage" id="kittengenerator" />
       <div className="projectPageBackground">
         <main className="projectPage">
@@ -139,8 +138,6 @@ const KittenGeneratorPage = () => {
           </div>
         </main>
       </div>
-    </Fragment>
+    </>
   );
-};
-
-export default KittenGeneratorPage;
+}

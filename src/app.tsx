@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homepage";
 import SmartVisionPage from "./pages/smart-vision-page";

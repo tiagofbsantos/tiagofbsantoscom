@@ -6,7 +6,12 @@ const isLocalhost = Boolean(
     )
 );
 
-export function register(config) {
+type ServiceWorkerConfig = {
+  onUpdate?: (registration: ServiceWorkerRegistration) => void;
+  onSuccess?: (registration: ServiceWorkerRegistration) => void;
+};
+
+export function register(config?: ServiceWorkerConfig) {
   if (import.meta.env.PROD && "serviceWorker" in navigator) {
     const baseUrl = import.meta.env.BASE_URL;
     const publicUrl = new URL(baseUrl, window.location.href);
@@ -31,7 +36,7 @@ export function register(config) {
   }
 }
 
-function registerValidSW(swUrl, config) {
+function registerValidSW(swUrl: string, config?: ServiceWorkerConfig) {
   navigator.serviceWorker
     .register(swUrl)
     .then((registration) => {
@@ -46,25 +51,21 @@ function registerValidSW(swUrl, config) {
               console.log(
                 "New content is available and will be used when all tabs for this page are closed."
               );
-              if (config && config.onUpdate) {
-                config.onUpdate(registration);
-              }
+              config?.onUpdate?.(registration);
             } else {
               console.log("Content is cached for offline use.");
-              if (config && config.onSuccess) {
-                config.onSuccess(registration);
-              }
+              config?.onSuccess?.(registration);
             }
           }
         };
       };
     })
-    .catch((error) => {
+    .catch((error: unknown) => {
       console.error("Error during service worker registration:", error);
     });
 }
 
-function checkValidServiceWorker(swUrl, config) {
+function checkValidServiceWorker(swUrl: string, config?: ServiceWorkerConfig) {
   fetch(swUrl, {
     headers: { "Service-Worker": "script" },
   })
@@ -72,7 +73,7 @@ function checkValidServiceWorker(swUrl, config) {
       const contentType = response.headers.get("content-type");
       if (
         response.status === 404 ||
-        (contentType != null && contentType.indexOf("javascript") === -1)
+        (contentType != null && !contentType.includes("javascript"))
       ) {
         navigator.serviceWorker.ready.then((registration) => {
           registration.unregister().then(() => {
@@ -96,8 +97,8 @@ export function unregister() {
       .then((registration) => {
         registration.unregister();
       })
-      .catch((error) => {
-        console.error(error.message);
+      .catch((error: unknown) => {
+        console.error(error instanceof Error ? error.message : error);
       });
   }
 }
