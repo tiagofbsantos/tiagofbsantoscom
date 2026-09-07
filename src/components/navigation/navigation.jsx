@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 import { ReactComponent as Medium } from "../../assets/medium.svg";
 import { ReactComponent as GitHub } from "../../assets/github.svg";
@@ -64,7 +64,7 @@ const Navigation = ({ page, id }) => {
           </Fragment>
         )}
         {page === "projectPage" && (
-          <Link to={`/#${id}`} className="svgWrapper">
+          <Link to={{ pathname: "/", hash: `#${id}` }} className="svgWrapper">
             <svg className="backSvg" xmlns="http://www.w3.org/2000/svg">
               <g>
                 <rect

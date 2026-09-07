@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import Navigation from "../components/navigation/navigation";
-import ScrollToTop from "../components/scroll-to-top/scroll-to-top";
 
 import { ReactComponent as PwaLogo } from "../assets/pwa.svg";
 import { ReactComponent as ReactLogo } from "../assets/react.svg";
@@ -23,7 +22,6 @@ import "../components/project/project.css";
 const KittenGeneratorPage = () => {
   return (
     <Fragment>
-      <ScrollToTop />
       <Navigation page="projectPage" id="kittengenerator" />
       <div className="projectPageBackground">
         <main className="projectPage">
@@ -59,7 +57,7 @@ const KittenGeneratorPage = () => {
               <li>changes are made using pure functions</li>
             </ul>
             <p>
-              And the flux pattern: Action -> Reducer -> Store -> Make changes.
+              And the flux pattern: Action → Reducer → Store → Make changes.
             </p>
             <p>
               <strong>CI/CD</strong> done with <strong>circleci</strong>, with{" "}
