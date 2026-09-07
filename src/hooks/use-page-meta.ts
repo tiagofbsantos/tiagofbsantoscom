@@ -60,5 +60,5 @@ export default function usePageMeta(page: PageMeta) {
     upsertMeta("name", "twitter:description", page.description);
     upsertMeta("name", "twitter:image", OG_IMAGE);
     upsertJsonLd(page);
-  }, [page.path, page.title, page.description, page.ogType, page.noindex]);
+  }, [page]);
 }

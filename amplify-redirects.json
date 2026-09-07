@@ -1,0 +1,44 @@
+[
+  {
+    "source": "/projects/smartvision",
+    "target": "/projects/smartvision/index.html",
+    "status": "200",
+    "condition": null
+  },
+  {
+    "source": "/projects/smartvision/",
+    "target": "/projects/smartvision/index.html",
+    "status": "200",
+    "condition": null
+  },
+  {
+    "source": "/projects/kittengenerator",
+    "target": "/projects/kittengenerator/index.html",
+    "status": "200",
+    "condition": null
+  },
+  {
+    "source": "/projects/kittengenerator/",
+    "target": "/projects/kittengenerator/index.html",
+    "status": "200",
+    "condition": null
+  },
+  {
+    "source": "/projects/tiagofbsantoscom",
+    "target": "/projects/tiagofbsantoscom/index.html",
+    "status": "200",
+    "condition": null
+  },
+  {
+    "source": "/projects/tiagofbsantoscom/",
+    "target": "/projects/tiagofbsantoscom/index.html",
+    "status": "200",
+    "condition": null
+  },
+  {
+    "source": "</^[^.]+$|\\.(?!(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json|webp|html|webmanifest|avif|xml)$)([^.]+$)/>",
+    "target": "/index.html",
+    "status": "200",
+    "condition": null
+  }
+]
