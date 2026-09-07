@@ -1,9 +1,34 @@
-import { defineConfig } from "vite";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
+import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 import { VitePWA } from "vite-plugin-pwa";
+import { ROUTES, applyMetaToHtml } from "./src/data/site.ts";
 
 const themeColor = "#0077b5";
+
+function prerenderRoutes(): Plugin {
+  return {
+    name: "prerender-routes",
+    apply: "build",
+    enforce: "post",
+    closeBundle() {
+      const indexPath = join("build", "index.html");
+      const template = readFileSync(indexPath, "utf8");
+      for (const page of ROUTES) {
+        const html = applyMetaToHtml(template, page);
+        if (page.path === "/") {
+          writeFileSync(indexPath, html);
+          continue;
+        }
+        const dir = join("build", page.path);
+        mkdirSync(dir, { recursive: true });
+        writeFileSync(join(dir, "index.html"), html);
+      }
+    },
+  };
+}
 
 export default defineConfig({
   plugins: [
@@ -67,6 +92,7 @@ export default defineConfig({
         enabled: false,
       },
     }),
+    prerenderRoutes(),
   ],
   server: {
     host: "127.0.0.1",
