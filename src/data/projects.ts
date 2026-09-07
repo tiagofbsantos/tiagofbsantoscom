@@ -43,7 +43,7 @@ export const projectsList: ProjectItem[] = [
     image: TiagoSantosCom,
     name: "Tiago F. B. Santos .com",
     description:
-      "A React Progressive Web App portfolio, to showcase my work as a Full Stack Software Engineer",
+      "A React Progressive Web App portfolio, to showcase my work as a Lead Software Engineer",
     source: "https://github.com/tiagofbsantos/tiagofbsantoscom",
     moreInfo: "/projects/tiagofbsantoscom",
     id: "tiagofbsantoscom",

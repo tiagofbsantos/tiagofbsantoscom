@@ -4,17 +4,19 @@ import Medium from "../../assets/medium.svg?react";
 import GitHub from "../../assets/github.svg?react";
 import LinkedIn from "../../assets/linkedin.svg?react";
 import Mail from "../../assets/mail.svg?react";
+import ExternalLink from "../external-link/external-link";
 
 import "./navigation.css";
 
 type NavigationProps =
   | { page: "homepage" }
-  | { page: "projectPage"; id: string };
+  | { page: "projectPage"; id: string }
+  | { page: "notFound" };
 
 export default function Navigation(props: NavigationProps) {
   return (
-    <nav className="navigation">
-      <nav className="navLeft">
+    <nav className="navigation" aria-label="Primary">
+      <div className="navLeft">
         {props.page === "homepage" && (
           <>
             <a href="#projects" className="svgWrapper">
@@ -66,9 +68,13 @@ export default function Navigation(props: NavigationProps) {
             </a>
           </>
         )}
-        {props.page === "projectPage" && (
+        {(props.page === "projectPage" || props.page === "notFound") && (
           <Link
-            to={{ pathname: "/", hash: `#${props.id}` }}
+            to={
+              props.page === "projectPage"
+                ? { pathname: "/", hash: `#${props.id}` }
+                : "/"
+            }
             className="svgWrapper"
           >
             <svg className="backSvg" xmlns="http://www.w3.org/2000/svg">
@@ -87,27 +93,36 @@ export default function Navigation(props: NavigationProps) {
                   textAnchor="middle"
                   alignmentBaseline="central"
                 >
-                  Back
+                  {props.page === "notFound" ? "Home" : "Back"}
                 </text>
               </g>
             </svg>
           </Link>
         )}
-      </nav>
-      <nav className="navRight">
-        <a href="https://medium.com/@tiagofbsantos/deploy-https-node-postgres-redis-react-to-aws-ef252567200d?source=friends_link&sk=c153c74d65621a9d28f944a3e422338f">
-          <Medium />
+      </div>
+      <div className="navRight">
+        <ExternalLink
+          href="https://medium.com/@tiagofbsantos/deploy-https-node-postgres-redis-react-to-aws-ef252567200d?source=friends_link&sk=c153c74d65621a9d28f944a3e422338f"
+          aria-label="Medium"
+        >
+          <Medium aria-hidden="true" />
+        </ExternalLink>
+        <ExternalLink
+          href="https://github.com/tiagofbsantos"
+          aria-label="GitHub"
+        >
+          <GitHub aria-hidden="true" />
+        </ExternalLink>
+        <ExternalLink
+          href="https://www.linkedin.com/in/tiagofbsantos"
+          aria-label="LinkedIn"
+        >
+          <LinkedIn aria-hidden="true" />
+        </ExternalLink>
+        <a href="mailto:santosfbtiago@gmail.com?Subject=Hello" aria-label="Email">
+          <Mail aria-hidden="true" />
         </a>
-        <a href="https://github.com/tiagofbsantos">
-          <GitHub />
-        </a>
-        <a href="https://www.linkedin.com/in/tiagofbsantos">
-          <LinkedIn />
-        </a>
-        <a href="mailto:santosfbtiago@gmail.com?Subject=Hello">
-          <Mail />
-        </a>
-      </nav>
+      </div>
     </nav>
   );
 }

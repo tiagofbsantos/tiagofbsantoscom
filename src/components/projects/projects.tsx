@@ -16,8 +16,8 @@ export default function Projects({
   projectsList,
 }: ProjectsProps) {
   return (
-    <main id={section} className={section}>
-      <h1>{sectionTitle}</h1>
+    <section id={section} className={section} aria-labelledby={`${section}-title`}>
+      <h2 id={`${section}-title`}>{sectionTitle}</h2>
       {projectsList.map((project) => (
         <Project
           key={project.id ?? project.name}
@@ -32,6 +32,6 @@ export default function Projects({
           id={project.id}
         />
       ))}
-    </main>
+    </section>
   );
 }

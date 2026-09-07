@@ -8,18 +8,20 @@ export default function HomePage() {
     <>
       <Navigation page="homepage" />
       <AboutMe />
-      <Projects
-        item="project"
-        section="projects"
-        sectionTitle="Projects"
-        projectsList={projectsList}
-      />
-      <Projects
-        item="miniProject"
-        section="miniProjects"
-        sectionTitle="Mini Projects"
-        projectsList={miniProjectsList}
-      />
+      <main>
+        <Projects
+          item="project"
+          section="projects"
+          sectionTitle="Projects"
+          projectsList={projectsList}
+        />
+        <Projects
+          item="miniProject"
+          section="miniProjects"
+          sectionTitle="Mini Projects"
+          projectsList={miniProjectsList}
+        />
+      </main>
     </>
   );
 }

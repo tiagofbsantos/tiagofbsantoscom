@@ -1,4 +1,5 @@
 import Navigation from "../components/navigation/navigation";
+import ExternalLink from "../components/external-link/external-link";
 
 import PwaLogo from "../assets/pwa.svg?react";
 import ReactLogo from "../assets/react.svg?react";
@@ -26,7 +27,7 @@ export default function TiagoFBSantosCom() {
             <h1 className="projectTitle">Tiago F. B. Santos .com</h1>
             <p>
               The personal portfolio website created to showcase my work as a
-              Full Stack Software Engineer.
+              Lead Software Engineer.
             </p>
             <p>
               It's a <strong>Responsive Progressive Web App</strong>, using{" "}
@@ -53,59 +54,81 @@ export default function TiagoFBSantosCom() {
               Deployed the app using <strong>AWS Amplify</strong> and{" "}
               <strong>Amazon Route 53</strong> for domain management.
             </p>
-            <nav className="projectLinks">
-              <a
+            <nav className="projectLinks" aria-label="Portfolio links">
+              <ExternalLink
                 href="https://github.com/tiagofbsantos/tiagofbsantoscom"
                 className="projectLink"
               >
                 App Code
-              </a>
+              </ExternalLink>
             </nav>
           </article>
           <div className="technologies">
             <h2>Technologies used:</h2>
             <div className="logos">
-              <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps">
-                <PwaLogo />
-              </a>
-              <a href="https://reactjs.org/">
-                <ReactLogo />
-              </a>
-              <a href="https://reacttraining.com/react-router/">
-                <ReactRouterLogo />
-              </a>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-                <JsLogo />
-              </a>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-                <CssLogo />
-              </a>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-                <HtmlLogo />
-              </a>
-              <a href="https://aws.amazon.com/amplify/">
-                <img src={AmplifyLogo} alt="AWS Amplify Logo" />
-              </a>
-              <a href="https://aws.amazon.com/route53/">
-                <Route53Logo />
-              </a>
-              <a href="https://git-scm.com/">
-                <GitLogo />
-              </a>
-              <a href="https://github.com/">
-                <GithubLogo />
-              </a>
-              <a href="https://www.npmjs.com/">
-                <NpmLogo />
-              </a>
+              <ExternalLink
+                href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
+                aria-label="Progressive Web Apps"
+              >
+                <PwaLogo aria-hidden="true" />
+              </ExternalLink>
+              <ExternalLink href="https://reactjs.org/" aria-label="React">
+                <ReactLogo aria-hidden="true" />
+              </ExternalLink>
+              <ExternalLink
+                href="https://reacttraining.com/react-router/"
+                aria-label="React Router"
+              >
+                <ReactRouterLogo aria-hidden="true" />
+              </ExternalLink>
+              <ExternalLink
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                aria-label="JavaScript"
+              >
+                <JsLogo aria-hidden="true" />
+              </ExternalLink>
+              <ExternalLink
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                aria-label="CSS"
+              >
+                <CssLogo aria-hidden="true" />
+              </ExternalLink>
+              <ExternalLink
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                aria-label="HTML"
+              >
+                <HtmlLogo aria-hidden="true" />
+              </ExternalLink>
+              <ExternalLink
+                href="https://aws.amazon.com/amplify/"
+                aria-label="AWS Amplify"
+              >
+                <img src={AmplifyLogo} alt="" />
+              </ExternalLink>
+              <ExternalLink
+                href="https://aws.amazon.com/route53/"
+                aria-label="Amazon Route 53"
+              >
+                <Route53Logo aria-hidden="true" />
+              </ExternalLink>
+              <ExternalLink href="https://git-scm.com/" aria-label="Git">
+                <GitLogo aria-hidden="true" />
+              </ExternalLink>
+              <ExternalLink href="https://github.com/" aria-label="GitHub">
+                <GithubLogo aria-hidden="true" />
+              </ExternalLink>
+              <ExternalLink href="https://www.npmjs.com/" aria-label="npm">
+                <NpmLogo aria-hidden="true" />
+              </ExternalLink>
             </div>
             <p>Progressive Web App Lighthouse Score: </p>
-            <a
+            <ExternalLink
               className="pwaImg"
               href="https://developers.google.com/web/tools/lighthouse/v3/scoring"
+              aria-label="Progressive Web App Lighthouse scoring"
             >
               <img src={PWAScore} alt="Progressive Web App Lighthouse Score" />
-            </a>
+            </ExternalLink>
           </div>
         </main>
       </div>

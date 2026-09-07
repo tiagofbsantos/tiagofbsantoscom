@@ -1,7 +1,8 @@
 .navigation {
   position: sticky;
   top: 0;
-  background-color: #0077b5;
+  z-index: 10;
+  background-color: #1a86c8;
   min-height: 10vh;
   height: auto;
   display: flex;
@@ -99,7 +100,7 @@
 }
 
 .svgWrapper:hover .projectsShape,
-.svgWrapper:focus .projectsShape {
+.svgWrapper:focus-visible .projectsShape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
   stroke-dasharray: 285;
@@ -109,7 +110,7 @@
 }
 
 .svgWrapper:hover .miniProjectsShape,
-.svgWrapper:focus .miniProjectsShape {
+.svgWrapper:focus-visible .miniProjectsShape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
   stroke-dasharray: 365;
@@ -117,17 +118,8 @@
   text-decoration: none;
 }
 
-/* .svgWrapper:hover .skillsShape,
-.svgWrapper:focus .skillsShape {
-  stroke-width: 2px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 225;
-  stroke: white;
-  text-decoration: none;
-} */
-
 .svgWrapper:hover .backShape,
-.svgWrapper:focus .backShape {
+.svgWrapper:focus-visible .backShape {
   stroke-width: 2px;
   stroke-dashoffset: 0;
   stroke-dasharray: 205;
@@ -141,8 +133,14 @@
 }
 
 .svgWrapper:hover .svgtext,
-.svgWrapper:focus .svgtext {
+.svgWrapper:focus-visible .svgtext {
   fill: white;
+}
+
+.svgWrapper:focus-visible,
+.navRight a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
 }
 
 .navRight {
@@ -163,8 +161,8 @@
   transition: all 1s;
 }
 
-.navRight svg:hover,
-.navRight a:focus {
+.navRight a:hover svg,
+.navRight a:focus-visible svg {
   fill: white;
 }
 

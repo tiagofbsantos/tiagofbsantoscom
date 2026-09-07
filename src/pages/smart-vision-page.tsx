@@ -1,4 +1,5 @@
 import Navigation from "../components/navigation/navigation";
+import ExternalLink from "../components/external-link/external-link";
 
 import PwaLogo from "../assets/pwa.svg?react";
 import ReactLogo from "../assets/react.svg?react";
@@ -61,15 +62,6 @@ export default function SmartVisionPage() {
               <strong>Clarifai API</strong> for face detection and celebrity
               recognition.
             </p>
-
-            <p>
-              Featuring a <strong>React</strong> frontend and a{" "}
-              <strong>Node.js</strong> and <strong>Express.js</strong> backend{" "}
-              <strong>RESTful API</strong> with a <strong>PostgreSQL</strong>{" "}
-              and <strong>Redis</strong> databases, using the{" "}
-              <strong>Clarifai API</strong> for face detection and celebrity
-              recognition.
-            </p>
             <p>
               With user accounts (register and sign in functionality), and user
               profiles. Storing the user data in a PostgreSQL database. The
@@ -121,27 +113,27 @@ export default function SmartVisionPage() {
               using <strong>Let's Encrypt</strong>.
             </p>
 
-            <nav className="projectLinks">
-              <a
+            <nav className="projectLinks" aria-label="Smart Vision links">
+              <ExternalLink
                 href="https://smartvision.tiagofbsantos.com/"
                 className="projectLink"
               >
                 See Live
-              </a>
+              </ExternalLink>
 
-              <a
+              <ExternalLink
                 href="https://github.com/tiagofbsantos/smart-vision"
                 className="projectLink"
               >
                 App Code
-              </a>
+              </ExternalLink>
 
-              <a
+              <ExternalLink
                 href="https://github.com/tiagofbsantos/smart-vision-api"
                 className="projectLink"
               >
                 API Code
-              </a>
+              </ExternalLink>
             </nav>
           </article>
 
@@ -149,119 +141,162 @@ export default function SmartVisionPage() {
             <h2>Technologies used:</h2>
 
             <div className="logos">
-              <a href="https://nodejs.org/en/">
-                <NodeLogo />
-              </a>
+              <ExternalLink href="https://nodejs.org/en/" aria-label="Node.js">
+                <NodeLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://expressjs.com/">
-                <ExpressLogo />
-              </a>
+              <ExternalLink href="https://expressjs.com/" aria-label="Express">
+                <ExpressLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://www.postgresql.org/">
-                <PostgresLogo />
-              </a>
+              <ExternalLink
+                href="https://www.postgresql.org/"
+                aria-label="PostgreSQL"
+              >
+                <PostgresLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://redis.io/">
-                <RedisLogo />
-              </a>
+              <ExternalLink href="https://redis.io/" aria-label="Redis">
+                <RedisLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://www.docker.com/">
-                <DockerLogo />
-              </a>
+              <ExternalLink href="https://www.docker.com/" aria-label="Docker">
+                <DockerLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://docs.docker.com/compose/">
-                <ComposeLogo />
-              </a>
+              <ExternalLink
+                href="https://docs.docker.com/compose/"
+                aria-label="Docker Compose"
+              >
+                <ComposeLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://yaml.org/">
-                <YamlLogo />
-              </a>
+              <ExternalLink href="https://yaml.org/" aria-label="YAML">
+                <YamlLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://jwt.io/">
-                <JwtLogo />
-              </a>
+              <ExternalLink href="https://jwt.io/" aria-label="JSON Web Token">
+                <JwtLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://www.clarifai.com/">
-                <ClarifaiLogo />
-              </a>
+              <ExternalLink href="https://www.clarifai.com/" aria-label="Clarifai">
+                <ClarifaiLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps">
-                <PwaLogo />
-              </a>
+              <ExternalLink
+                href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
+                aria-label="Progressive Web Apps"
+              >
+                <PwaLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://reactjs.org/">
-                <ReactLogo />
-              </a>
+              <ExternalLink href="https://reactjs.org/" aria-label="React">
+                <ReactLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://www.typescriptlang.org/">
-                <TsLogo />
-              </a>
+              <ExternalLink
+                href="https://www.typescriptlang.org/"
+                aria-label="TypeScript"
+              >
+                <TsLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-                <CssLogo />
-              </a>
+              <ExternalLink
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                aria-label="CSS"
+              >
+                <CssLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-                <HtmlLogo />
-              </a>
+              <ExternalLink
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                aria-label="HTML"
+              >
+                <HtmlLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://aws.amazon.com/lambda/">
-                <img src={LambdaLogo} alt="AWS Lambda Logo" />
-              </a>
+              <ExternalLink
+                href="https://aws.amazon.com/lambda/"
+                aria-label="AWS Lambda"
+              >
+                <img src={LambdaLogo} alt="" />
+              </ExternalLink>
 
-              <a href="https://aws.amazon.com/elasticbeanstalk/">
-                <img src={EbLogo} alt="Elastic Beanstalk Logo" />
-              </a>
+              <ExternalLink
+                href="https://aws.amazon.com/elasticbeanstalk/"
+                aria-label="AWS Elastic Beanstalk"
+              >
+                <img src={EbLogo} alt="" />
+              </ExternalLink>
 
-              <a href="https://aws.amazon.com/elasticache/">
-                <img src={ElastiCacheLogo} alt="Amazon ElastiCache Logo" />
-              </a>
+              <ExternalLink
+                href="https://aws.amazon.com/elasticache/"
+                aria-label="Amazon ElastiCache"
+              >
+                <img src={ElastiCacheLogo} alt="" />
+              </ExternalLink>
 
-              <a href="https://aws.amazon.com/rds/">
-                <img src={RdsLogo} alt="Amazon RDS Logo" />
-              </a>
+              <ExternalLink
+                href="https://aws.amazon.com/rds/"
+                aria-label="Amazon RDS"
+              >
+                <img src={RdsLogo} alt="" />
+              </ExternalLink>
 
-              <a href="https://aws.amazon.com/ec2/">
-                <img src={Ec2Logo} alt="Amazon EC2 Logo" />
-              </a>
+              <ExternalLink
+                href="https://aws.amazon.com/ec2/"
+                aria-label="Amazon EC2"
+              >
+                <img src={Ec2Logo} alt="" />
+              </ExternalLink>
 
-              <a href="https://aws.amazon.com/amplify/">
-                <img src={AmplifyLogo} alt="AWS Amplify Logo" />
-              </a>
+              <ExternalLink
+                href="https://aws.amazon.com/amplify/"
+                aria-label="AWS Amplify"
+              >
+                <img src={AmplifyLogo} alt="" />
+              </ExternalLink>
 
-              <a href="https://aws.amazon.com/route53/">
-                <Route53Logo />
-              </a>
+              <ExternalLink
+                href="https://aws.amazon.com/route53/"
+                aria-label="Amazon Route 53"
+              >
+                <Route53Logo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://nginx.org/">
-                <NginxLogo />
-              </a>
+              <ExternalLink href="https://nginx.org/" aria-label="Nginx">
+                <NginxLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://letsencrypt.org/">
-                <LetsEncryptLogo />
-              </a>
+              <ExternalLink
+                href="https://letsencrypt.org/"
+                aria-label="Let's Encrypt"
+              >
+                <LetsEncryptLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://git-scm.com/">
-                <GitLogo />
-              </a>
+              <ExternalLink href="https://git-scm.com/" aria-label="Git">
+                <GitLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://github.com/">
-                <GithubLogo />
-              </a>
+              <ExternalLink href="https://github.com/" aria-label="GitHub">
+                <GithubLogo aria-hidden="true" />
+              </ExternalLink>
 
-              <a href="https://www.npmjs.com/">
-                <NpmLogo />
-              </a>
+              <ExternalLink href="https://www.npmjs.com/" aria-label="npm">
+                <NpmLogo aria-hidden="true" />
+              </ExternalLink>
             </div>
 
             <p>Progressive Web App Lighthouse Score: </p>
 
-            <a
+            <ExternalLink
               className="pwaImg"
               href="https://developers.google.com/web/tools/lighthouse/v3/scoring"
+              aria-label="Progressive Web App Lighthouse scoring"
             >
               <img src={PWAScore} alt="Progressive Web App Lighthouse Score" />
-            </a>
+            </ExternalLink>
           </div>
         </main>
       </div>

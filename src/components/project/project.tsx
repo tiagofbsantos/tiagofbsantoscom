@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import type { ProjectItem } from "../../data/projects";
+import ExternalLink from "../external-link/external-link";
 import "./project.css";
 
 export type ProjectCardItem = "project" | "miniProject";
@@ -20,23 +21,23 @@ export default function Project({
   id,
 }: ProjectProps) {
   return (
-    <section id={id} className={item}>
-      <article className="projectText">
-        <h2>{name}</h2>
+    <article id={id} className={item}>
+      <div className="projectText">
+        <h3>{name}</h3>
         <p>{description}</p>
-        <nav className="projectLinks">
+        <nav className="projectLinks" aria-label={`${name} links`}>
           {live && (
-            <a href={live} className="projectLink">
+            <ExternalLink href={live} className="projectLink">
               See Live
-            </a>
+            </ExternalLink>
           )}
-          <a href={source} className="projectLink">
+          <ExternalLink href={source} className="projectLink">
             App Code
-          </a>
+          </ExternalLink>
           {apiSource && (
-            <a href={apiSource} className="projectLink">
+            <ExternalLink href={apiSource} className="projectLink">
               API Code
-            </a>
+            </ExternalLink>
           )}
           {moreInfo && (
             <Link to={moreInfo} className="projectLink">
@@ -44,10 +45,10 @@ export default function Project({
             </Link>
           )}
         </nav>
-      </article>
+      </div>
       <div className="projectImg">
         <img alt={name} src={image} />
       </div>
-    </section>
+    </article>
   );
 }

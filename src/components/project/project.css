@@ -22,7 +22,7 @@
   padding: 5vh 5vw;
 }
 
-.projectText>h2 {
+.projectText > h3 {
   font-family: "Avenir Roman";
   letter-spacing: 2px;
   font-size: 32px;
@@ -87,15 +87,20 @@
 }
 
 .projectLink:hover,
-.projectLink:focus {
+.projectLink:focus-visible {
   color: #f9f9f9;
   background-color: #0077b5;
 }
 
 .miniProject .projectLink:hover,
-.miniProject .projectLink:focus {
+.miniProject .projectLink:focus-visible {
   color: #f9f9f9;
   background-color: #005eb5;
+}
+
+.projectLink:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
 }
 
 @media screen and (max-width: 768px) {
