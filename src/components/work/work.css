@@ -1,0 +1,54 @@
+.work {
+  background-color: #f9f9f9;
+  padding: 0 8vw 10vh;
+  scroll-margin-top: 10vh;
+}
+
+.work > h2 {
+  padding: 10vh 0 0;
+  margin: 0 auto;
+  max-width: 60rem;
+  font-family: "Avenir Roman";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 38px;
+  text-align: center;
+}
+
+.workRole {
+  max-width: 60rem;
+  margin: 4rem auto 0;
+  text-align: left;
+}
+
+.workRole h3 {
+  font-family: "Avenir Roman";
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin: 0 0 0.35em;
+}
+
+.workMeta {
+  font-family: "Futura PT Light";
+  font-size: 20px;
+  margin: 0 0 1em;
+}
+
+.workSummary,
+.workBullets {
+  font-family: "Futura PT Light";
+  font-size: 20px;
+}
+
+.workSummary {
+  margin: 0 0 1em;
+}
+
+.workBullets {
+  margin: 0;
+  padding-left: 1.25em;
+}
+
+.workBullets li {
+  margin-bottom: 0.6em;
+}
