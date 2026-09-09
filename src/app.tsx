@@ -4,6 +4,7 @@ import HomePage from "./pages/homepage";
 import NotFoundPage from "./pages/not-found-page";
 import ScrollToTop from "./components/scroll-to-top/scroll-to-top";
 import DocumentMeta from "./components/document-meta/document-meta";
+import SiteFooter from "./components/site-footer/site-footer";
 
 const SmartVisionPage = lazy(() => import("./pages/smart-vision-page"));
 const KittenGeneratorPage = lazy(() => import("./pages/kitten-generator-page"));
@@ -36,6 +37,7 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
+      <SiteFooter />
     </>
   );
 }

@@ -22,6 +22,8 @@ export type ProjectIntro = {
   intro: string;
 };
 
+export const LAST_UPDATED = "8 September 2026";
+
 export const HERO = {
   name: "Tiago Santos",
   role: "Backend Engineer | TypeScript, Node.js, GCP",
@@ -135,7 +137,7 @@ function externalAnchor(href: string, className: string | undefined, text: strin
 }
 
 function heroHtml(): string {
-  return `<header class="aboutMe"><h1>${escapeHtml(HERO.name)}</h1><p class="heroRole">${escapeHtml(HERO.role)}</p><p class="heroDomain">${escapeHtml(HERO.domain)}</p><p class="heroPitch">${escapeHtml(HERO.pitch)}</p><p class="heroMeta">${escapeHtml(HERO.meta)}</p></header>`;
+  return `<header class="aboutMe"><div class="heroCopy"><h1>${escapeHtml(HERO.name)}</h1><p class="heroRole">${escapeHtml(HERO.role)}</p><p class="heroDomain">${escapeHtml(HERO.domain)}</p><p class="heroPitch">${escapeHtml(HERO.pitch)}</p><p class="heroMeta">${escapeHtml(HERO.meta)}</p></div></header>`;
 }
 
 function workHtml(): string {

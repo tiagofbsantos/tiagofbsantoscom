@@ -1,0 +1,26 @@
+.siteFooter {
+  background: #1a86c8;
+  color: #000;
+  text-align: center;
+  padding: 2.5rem 8vw;
+  font-family: "Futura PT Light";
+  font-size: 17px;
+}
+
+.siteFooter p {
+  margin: 0 0 0.5em;
+}
+
+.siteFooter p:last-child {
+  margin-bottom: 0;
+}
+
+.siteFooter a {
+  color: inherit;
+  font-family: "Avenir Roman";
+}
+
+.siteFooter a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
