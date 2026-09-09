@@ -3,3 +3,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.tiagofbsantos.com/sitemap.xml
+
+# LLM-readable summary: https://www.tiagofbsantos.com/llms.txt

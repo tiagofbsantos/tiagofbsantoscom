@@ -39,3 +39,9 @@ customHeaders:
     headers:
       - key: Cache-Control
         value: no-cache
+  - pattern: "/llms.txt"
+    headers:
+      - key: Cache-Control
+        value: no-cache
+      - key: Content-Type
+        value: text/plain; charset=utf-8
