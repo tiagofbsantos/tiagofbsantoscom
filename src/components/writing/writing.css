@@ -1,0 +1,64 @@
+.writing {
+  background-color: #e6eff3;
+  padding: 0 8vw 10vh;
+  scroll-margin-top: 10vh;
+}
+
+.writing > h2 {
+  padding: 10vh 0 0;
+  margin: 0 auto;
+  max-width: 60rem;
+  font-family: "Avenir Roman";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 38px;
+  text-align: center;
+}
+
+.writingCard {
+  max-width: 60rem;
+  margin: 3rem auto 0;
+  padding: 2.5rem;
+  background: #fff;
+  border: 1px solid #cfdbe2;
+  text-align: left;
+}
+
+.writingLabel {
+  font-family: "Avenir Roman";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 0 0 0.75em;
+}
+
+.writingCard h3 {
+  font-family: "Avenir Roman";
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin: 0 0 0.75em;
+}
+
+.writingCard h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.writingCard h3 a:hover,
+.writingCard h3 a:focus-visible {
+  text-decoration: underline;
+}
+
+.writingCard p {
+  font-family: "Futura PT Light";
+  font-size: 20px;
+  margin: 0 0 1em;
+}
+
+.writingMetrics {
+  font-size: 17px !important;
+}
+
+.writingCard .projectLink {
+  display: inline-block;
+}
