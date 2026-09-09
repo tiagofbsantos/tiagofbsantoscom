@@ -59,8 +59,8 @@ export const projectsList: ProjectItem[] = [
       src: portfolioJpg,
       avif: portfolioAvif,
       webp: portfolioWebp,
-      width: 800,
-      height: 463,
+      width: 2529,
+      height: 1294,
     },
     name: "Tiago F. B. Santos .com",
     description:
