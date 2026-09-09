@@ -4,7 +4,8 @@ import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 import { VitePWA } from "vite-plugin-pwa";
-import { ROUTES, applyMetaToHtml } from "./src/data/site.ts";
+import { ROUTES, applyMetaToHtml, HOME_PAGE } from "./src/data/site.ts";
+import { staticBodyHtml } from "./src/data/content.ts";
 
 const themeColor = "#0077b5";
 
@@ -17,7 +18,10 @@ function prerenderRoutes(): Plugin {
       const indexPath = join("build", "index.html");
       const template = readFileSync(indexPath, "utf8");
       for (const page of ROUTES) {
-        const html = applyMetaToHtml(template, page);
+        const html = applyMetaToHtml(template, page).replace(
+          '<div id="root"></div>',
+          `<div id="root">${staticBodyHtml(page.path)}</div>`,
+        );
         if (page.path === "/") {
           writeFileSync(indexPath, html);
           continue;
@@ -47,13 +51,13 @@ export default defineConfig({
         "android-chrome-512x512.png",
         "pwa-maskable-512x512.png",
         "offline.html",
+        "llms.txt",
       ],
       manifest: {
         id: "/",
-        name: "Tiago Santos - Lead Software Engineer",
+        name: "Tiago Santos - Backend Engineer",
         short_name: "Tiago Santos",
-        description:
-          "Lead Software Engineer. Portfolio of full-stack web applications in TypeScript, Node.js, and React.",
+        description: HOME_PAGE.description,
         start_url: "/",
         scope: "/",
         display: "standalone",
