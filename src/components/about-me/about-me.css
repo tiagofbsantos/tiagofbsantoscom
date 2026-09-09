@@ -1,26 +1,61 @@
 .aboutMe {
-  height: 100%;
   min-height: 90vh;
   background-color: #1a86c8;
-  text-align: center;
-  padding: 10vh 10vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6vw;
+  padding: 10vh 8vw;
+  text-align: left;
+}
+
+.heroCopy {
+  flex: 1 1 28rem;
+  max-width: 46rem;
 }
 
 .aboutMe h1 {
   font-family: "Avenir Roman";
-  font-size: 34px;
+  font-size: 42px;
   letter-spacing: 1px;
+  margin: 0;
 }
 
 .aboutMe p {
   font-size: 26px;
 }
 
+.aboutMe .heroRole {
+  font-family: "Avenir Roman";
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin: 0.25em 0 0;
+}
+
+.aboutMe .heroDomain {
+  font-size: 22px;
+  margin: 0.25em 0 1em;
+}
+
+.aboutMe .heroPitch {
+  font-size: 22px;
+  max-width: 46rem;
+  margin: 0 0 1em;
+}
+
+.aboutMe .heroMeta {
+  font-size: 17px;
+  margin: 0;
+}
+
 .profilePicWrap {
+  flex: 0 0 auto;
   display: block;
-  margin: 0 auto;
   width: 40vh;
   height: 40vh;
+  max-width: 320px;
+  max-height: 320px;
   border-radius: 50%;
   overflow: hidden;
   background-color: #e4e4e6;
@@ -39,4 +74,21 @@
   object-fit: cover;
   object-position: center;
   transform: translateY(6%);
+}
+
+@media screen and (max-width: 768px) {
+  .aboutMe {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 4vh;
+  }
+
+  .heroCopy {
+    max-width: none;
+  }
+
+  .aboutMe .heroPitch {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

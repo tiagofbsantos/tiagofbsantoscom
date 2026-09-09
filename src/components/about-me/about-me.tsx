@@ -1,5 +1,6 @@
 import "./about-me.css";
 import Picture from "../picture/picture";
+import { HERO } from "../../data/content";
 import profileAvif from "../../assets/profile_pic.avif";
 import profileWebp from "../../assets/profile_pic.webp";
 import profileJpg from "../../assets/profile_pic.jpg";
@@ -7,6 +8,13 @@ import profileJpg from "../../assets/profile_pic.jpg";
 export default function AboutMe() {
   return (
     <header className="aboutMe">
+      <div className="heroCopy">
+        <h1>{HERO.name}</h1>
+        <p className="heroRole">{HERO.role}</p>
+        <p className="heroDomain">{HERO.domain}</p>
+        <p className="heroPitch">{HERO.pitch}</p>
+        <p className="heroMeta">{HERO.meta}</p>
+      </div>
       <div className="profilePicWrap">
         <Picture
           className="profilePic"
@@ -20,12 +28,6 @@ export default function AboutMe() {
           fetchPriority="high"
         />
       </div>
-      <h1>Hi, I'm Tiago!</h1>
-      <p>
-        Lead Software Engineer with a BSc. in Computer Science and
-        Business Management
-      </p>
-      <p>I build full-stack web applications in TypeScript, Node.js and React</p>
     </header>
   );
 }

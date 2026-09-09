@@ -1,6 +1,6 @@
 # tiagofbsantos.com
 
-Personal portfolio of Tiago Santos, Lead Software Engineer. A Vite 8 + React 19 + TypeScript SPA, deployed to AWS Amplify from `build/`.
+Personal portfolio of Tiago Santos, Backend Engineer. A Vite 8 + React 19 + TypeScript SPA, deployed to AWS Amplify from `build/`.
 
 ## Scripts
 
