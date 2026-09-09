@@ -29,14 +29,14 @@
 }
 
 .projectImg {
-  flex: 60%;
-  max-width: 60%;
+  flex: 50%;
+  max-width: 50%;
   height: auto;
 }
 
 .projectText {
-  flex: 40%;
-  max-width: 40%;
+  flex: 50%;
+  max-width: 50%;
   height: auto;
 }
 
@@ -48,7 +48,7 @@
 .projectImg img {
   width: 100%;
   height: auto;
-  box-shadow: 10px 10px 30px black;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .projectText {
@@ -105,6 +105,48 @@
 .projectLink:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
+}
+
+.compact {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: 1px solid #cfdbe2;
+  background: #fff;
+  padding: 1.5rem;
+}
+
+.compact .projectImg,
+.compact .projectText {
+  flex: 1 1 auto;
+  max-width: 100%;
+  padding: 0;
+}
+
+.compact .projectImg img {
+  box-shadow: none;
+  border: 1px solid #e2e8ec;
+}
+
+.compact .projectText > h3 {
+  font-size: 22px;
+  margin: 0.75rem 0 0.25rem;
+}
+
+.compact .projectText p {
+  font-size: 17px;
+  margin: 0 0 1rem;
+}
+
+.compact .projectLinks {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.compact .projectLink {
+  margin: 0 0.75rem 0 0;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {

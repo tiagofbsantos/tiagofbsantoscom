@@ -48,28 +48,11 @@ export const projectsList: ProjectItem[] = [
     },
     name: "Smart Vision",
     description:
-      "A React Progressive Web App for detecting faces and recognizing celebrities in pictures, with PostgreSQL and Redis databases",
+      "Face detection and celebrity recognition from a photo URL. React frontend, Node.js and Express REST API, PostgreSQL for accounts and Redis for sessions, deployed on AWS with single-instance HTTPS.",
     source: "https://github.com/tiagofbsantos/smart-vision",
     apiSource: "https://github.com/tiagofbsantos/smart-vision-api",
-    live: "https://smartvision.tiagofbsantos.com/",
     moreInfo: "/projects/smartvision",
     id: "smartvision",
-  },
-  {
-    image: {
-      src: kittenJpg,
-      avif: kittenAvif,
-      webp: kittenWebp,
-      width: 800,
-      height: 461,
-    },
-    name: "Kitten Generator",
-    description:
-      "An interactive Progressive Web App with React and Redux for generating kittens",
-    source: "https://github.com/tiagofbsantos/kitten-generator",
-    live: "https://kittengenerator.tiagofbsantos.com/",
-    moreInfo: "/projects/kittengenerator",
-    id: "kittengenerator",
   },
   {
     image: {
@@ -81,7 +64,7 @@ export const projectsList: ProjectItem[] = [
     },
     name: "Tiago F. B. Santos .com",
     description:
-      "A React Progressive Web App portfolio, to showcase my work as a Lead Software Engineer",
+      "This site. A prerendered React and TypeScript progressive web app on Vite, deployed to AWS Amplify.",
     source: "https://github.com/tiagofbsantos/tiagofbsantoscom",
     moreInfo: "/projects/tiagofbsantoscom",
     id: "tiagofbsantoscom",
@@ -91,6 +74,22 @@ export const projectsList: ProjectItem[] = [
 export const miniProjectsList: ProjectItem[] = [
   {
     image: {
+      src: kittenJpg,
+      avif: kittenAvif,
+      webp: kittenWebp,
+      width: 800,
+      height: 461,
+    },
+    name: "Kitten Generator",
+    description:
+      "A React and Redux progressive web app that generates kittens from two public APIs. CI with CircleCI and Jest.",
+    source: "https://github.com/tiagofbsantos/kitten-generator",
+    live: "https://kittengenerator.tiagofbsantos.com/",
+    moreInfo: "/projects/kittengenerator",
+    id: "kittengenerator",
+  },
+  {
+    image: {
       src: backgroundPng,
       avif: backgroundAvif,
       webp: backgroundWebp,
@@ -98,7 +97,7 @@ export const miniProjectsList: ProjectItem[] = [
       height: 450,
     },
     name: "Background Generator",
-    description: "A handy CSS code background generator",
+    description: "A CSS gradient background generator that outputs the code.",
     source: "https://github.com/tiagofbsantos/background-generator",
     live: "https://backgroundgenerator.tiagofbsantos.com/",
   },
@@ -111,7 +110,7 @@ export const miniProjectsList: ProjectItem[] = [
       height: 450,
     },
     name: "Startup Landing Page",
-    description: "A simple startup landing page with Mailchimp integration",
+    description: "A responsive startup landing page with Mailchimp signup.",
     source: "https://github.com/tiagofbsantos/startup-landing-page",
     live: "https://startup.tiagofbsantos.com/",
   },
@@ -122,7 +121,7 @@ export const miniProjectsList: ProjectItem[] = [
       height: 453,
     },
     name: "Dancing Droid",
-    description: "A simple CSS dancing droid",
+    description: "A droid animated entirely in CSS.",
     source: "https://github.com/tiagofbsantos/dancing-droid",
     live: "https://dancingdroid.tiagofbsantos.com/",
   },
@@ -135,7 +134,7 @@ export const miniProjectsList: ProjectItem[] = [
       height: 450,
     },
     name: "Wildlife",
-    description: "A simple CSS Flexbox image gallery",
+    description: "A responsive image gallery built with CSS Flexbox.",
     source: "https://github.com/tiagofbsantos/wildlife",
     live: "https://wildlife.tiagofbsantos.com/",
   },

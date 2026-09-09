@@ -4,7 +4,7 @@ import ExternalLink from "../external-link/external-link";
 import Picture from "../picture/picture";
 import "./project.css";
 
-export type ProjectCardItem = "project" | "miniProject";
+export type ProjectCardItem = "project" | "miniProject" | "compact";
 
 type ProjectProps = ProjectItem & {
   item: ProjectCardItem;

@@ -35,3 +35,17 @@
   letter-spacing: 2px;
   font-size: 38px;
 }
+
+.miniProjects .compactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 5vh 10vw 10vh;
+}
+
+.sectionNote {
+  margin: 1rem auto 0;
+  font-size: 18px;
+  font-style: italic;
+  max-width: 46rem;
+}
