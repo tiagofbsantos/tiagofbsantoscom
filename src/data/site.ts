@@ -1,6 +1,6 @@
 export const SITE_ORIGIN = "https://www.tiagofbsantos.com";
 export const OG_IMAGE = `${SITE_ORIGIN}/og-image.jpg`;
-export const OG_IMAGE_ALT = "Tiago Santos, Lead Software Engineer";
+export const OG_IMAGE_ALT = "Tiago Santos, Backend Engineer";
 export const OG_IMAGE_WIDTH = "1200";
 export const OG_IMAGE_HEIGHT = "630";
 
@@ -16,9 +16,9 @@ export type PageMeta = {
 
 export const HOME_PAGE: PageMeta = {
   path: "/",
-  title: "Tiago Santos | Lead Software Engineer",
+  title: "Tiago Santos | Backend Engineer",
   description:
-    "Tiago Santos - Lead Software Engineer. Portfolio of full-stack web applications in TypeScript, Node.js, and React.",
+    "Backend engineer working on expense and business-travel spend platforms. TypeScript, Node.js and GCP, with a focus on systems that must stay correct, auditable and legally valid across European tax regimes.",
   ogType: "profile",
 };
 
@@ -36,21 +36,21 @@ export const ROUTES: PageMeta[] = [
     path: "/projects/smartvision",
     title: "Smart Vision | Tiago Santos",
     description:
-      "A React Progressive Web App for detecting faces and recognizing celebrities in pictures, with PostgreSQL and Redis.",
+      "Face detection and celebrity recognition from a photo URL. React, Node.js and Express, PostgreSQL and Redis, deployed on AWS with single-instance HTTPS.",
     ogType: "website",
   },
   {
     path: "/projects/kittengenerator",
     title: "Kitten Generator | Tiago Santos",
     description:
-      "An interactive Progressive Web App with React and Redux for generating kittens.",
+      "A React and Redux progressive web app that generates kittens from two public APIs, with CircleCI and Jest.",
     ogType: "website",
   },
   {
     path: "/projects/tiagofbsantoscom",
     title: "Tiago F. B. Santos .com | Tiago Santos",
     description:
-      "A React Progressive Web App portfolio showcasing work as a Lead Software Engineer.",
+      "This site: a prerendered React and TypeScript progressive web app on Vite, deployed to AWS Amplify.",
     ogType: "website",
   },
 ];
@@ -79,8 +79,48 @@ export function jsonLd(page: PageMeta): object {
     name: "Tiago Santos",
     url: `${SITE_ORIGIN}/`,
     image: OG_IMAGE,
-    jobTitle: "Lead Software Engineer",
+    jobTitle: "Backend Engineer",
+    description: HOME_PAGE.description,
     email: "mailto:santosfbtiago@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Cologne",
+      addressCountry: "DE",
+    },
+    nationality: { "@type": "Country", name: "Portugal" },
+    worksFor: { "@type": "Organization", name: "Perk" },
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "ISCTE - Instituto Universitário de Lisboa",
+    },
+    knowsLanguage: [
+      { "@type": "Language", name: "Portuguese" },
+      { "@type": "Language", name: "English" },
+      { "@type": "Language", name: "German" },
+    ],
+    knowsAbout: [
+      "Backend Development",
+      "TypeScript",
+      "Node.js",
+      "Google Cloud Platform",
+      "Microservices",
+      "Distributed Systems",
+      "REST API Design",
+      "Event-Driven Architecture",
+      "MongoDB",
+      "PostgreSQL",
+      "Firestore",
+      "Terraform",
+      "Datadog",
+      "Observability",
+      "Incident Response",
+      "Digital Signatures",
+      "Public Key Infrastructure",
+      "Regulatory Compliance",
+      "Expense Management",
+      "Fintech",
+      "Model Context Protocol",
+    ],
     sameAs: [
       "https://github.com/tiagofbsantos",
       "https://www.linkedin.com/in/tiagofbsantos",
@@ -114,7 +154,7 @@ export function jsonLd(page: PageMeta): object {
   };
 }
 
-function escapeAttr(value: string): string {
+export function escapeAttr(value: string): string {
   return value
     .replaceAll("&", "&amp;")
     .replaceAll('"', "&quot;")
@@ -168,6 +208,7 @@ export function applyMetaToHtml(html: string, page: PageMeta): string {
   next = replaceMeta(next, "property", "og:url", url);
   next = replaceMeta(next, "property", "og:type", page.ogType);
   next = replaceMeta(next, "property", "og:image", OG_IMAGE);
+  next = replaceMeta(next, "property", "og:image:alt", OG_IMAGE_ALT);
   next = replaceMeta(next, "name", "twitter:title", page.title);
   next = replaceMeta(next, "name", "twitter:description", page.description);
   next = replaceMeta(next, "name", "twitter:image", OG_IMAGE);
