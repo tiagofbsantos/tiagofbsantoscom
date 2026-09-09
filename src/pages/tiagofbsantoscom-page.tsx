@@ -1,6 +1,7 @@
 import Navigation from "../components/navigation/navigation";
 import ExternalLink from "../components/external-link/external-link";
 import TechLogo from "../components/tech-logo/tech-logo";
+import { PROJECT_INTROS } from "../data/content";
 
 import pwaLogo from "../assets/pwa.svg?url";
 import reactLogo from "../assets/react.svg?url";
@@ -17,6 +18,10 @@ import pwaScore from "../assets/pwatiagofbsantoscom.png";
 
 import "./project-page.css";
 import "../components/project/project.css";
+
+const intro = PROJECT_INTROS.find(
+  (page) => page.path === "/projects/tiagofbsantoscom",
+);
 
 const logos = [
   {
@@ -68,35 +73,28 @@ export default function TiagoFBSantosCom() {
         <main id="main" tabIndex={-1} className="projectPage">
           <article className="text">
             <h1 className="projectTitle">Tiago F. B. Santos .com</h1>
+            <p>{intro?.intro}</p>
             <p>
-              The personal portfolio website created to showcase my work as a
-              Lead Software Engineer.
+              Every route is prerendered at build time. A Vite plugin writes
+              per-route HTML with its own title, description, canonical URL,
+              Open Graph tags and JSON-LD, and injects the page content as
+              static markup, so crawlers, social unfurlers and automated readers
+              get the text without executing JavaScript.
             </p>
             <p>
-              It is a <strong>Responsive Progressive Web App</strong> built with{" "}
-              <strong>Vite</strong>, <strong>TypeScript</strong>,{" "}
-              <strong>React</strong>, and <strong>React Router</strong>.
+              Screenshots and the profile photo ship as AVIF and WebP with JPEG
+              fallbacks, fonts as woff2, and routes are code-split, so the first
+              load stays small. The service worker is Vite PWA in auto-update
+              mode with an offline fallback page.
             </p>
             <p>
-              Including several animations in <strong>CSS3</strong> and{" "}
-              <strong>SVG</strong>. Using <strong>semantic HTML5</strong>.
+              The animated navigation labels are inline SVG with stroke-dasharray
+              transitions rather than images, so they stay sharp at any size.
             </p>
             <p>
-              The projects and mini projects sections of the website are built
-              using reusable code, that builds both sections using the props it
-              receives, an array of objects. Each object in the array contains
-              all the necessary information to build each project component. The
-              base section information is also passed as props, including the
-              section titles and appropriate CSS classes to use.
-            </p>
-            <p>
-              Project screenshots and the profile photo ship as{" "}
-              <strong>AVIF</strong> and <strong>WebP</strong> with JPEG
-              fallbacks so the first load stays small.
-            </p>
-            <p>
-              Deployed the app using <strong>AWS Amplify</strong> and{" "}
-              <strong>Amazon Route 53</strong> for domain management.
+              Accessibility: semantic landmarks, a skip link, visible focus
+              states, and a prefers-reduced-motion path that disables the
+              animations.
             </p>
             <nav className="projectLinks" aria-label="Portfolio links">
               <ExternalLink

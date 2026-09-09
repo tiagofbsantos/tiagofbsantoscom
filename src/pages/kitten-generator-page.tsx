@@ -1,6 +1,7 @@
 import Navigation from "../components/navigation/navigation";
 import ExternalLink from "../components/external-link/external-link";
 import TechLogo from "../components/tech-logo/tech-logo";
+import { PROJECT_INTROS } from "../data/content";
 
 import pwaLogo from "../assets/pwa.svg?url";
 import reactLogo from "../assets/react.svg?url";
@@ -19,6 +20,10 @@ import pwaScore from "../assets/pwakittengenerator.png";
 
 import "./project-page.css";
 import "../components/project/project.css";
+
+const intro = PROJECT_INTROS.find(
+  (page) => page.path === "/projects/kittengenerator",
+);
 
 const logos = [
   {
@@ -68,45 +73,24 @@ export default function KittenGeneratorPage() {
         <main id="main" tabIndex={-1} className="projectPage">
           <article className="text">
             <h1 className="projectTitle">Kitten Generator</h1>
+            <p>{intro?.intro}</p>
             <p>
-              An interactive <strong>React</strong>{" "}
-              <strong>Single Page Responsive Progressive Web App</strong> for
-              generating kittens.
-            </p>
-            <p>
-              Using{" "}
+              An interactive React progressive web app that generates kittens,
+              using the{" "}
               <ExternalLink
                 className="textLink"
                 href="https://jsonplaceholder.typicode.com/"
               >
-                <strong>JSONPlaceholder API</strong>
+                JSONPlaceholder API
               </ExternalLink>{" "}
-              for generating kittens' personal data and{" "}
+              for their details and the{" "}
               <ExternalLink className="textLink" href="https://robohash.org/">
-                <strong>Robohash API</strong>
+                Robohash API
               </ExternalLink>{" "}
-              for generating their unique pictures and backgrounds from their
-              names.
-            </p>
-            <p>
-              Using <strong>Redux</strong> for better and scalable state
-              management. Using the 3 principles:
-            </p>
-            <ul>
-              <li>single source of truth</li>
-              <li>state is read only</li>
-              <li>changes are made using pure functions</li>
-            </ul>
-            <p>
-              And the flux pattern: Action → Reducer → Store → Make changes.
-            </p>
-            <p>
-              <strong>CI/CD</strong> done with <strong>CircleCI</strong>, with{" "}
-              <strong>Jest</strong> for unit tests.
-            </p>
-            <p>
-              Deployed the app using <strong>AWS Amplify</strong> and{" "}
-              <strong>Amazon Route 53</strong> for subdomain management.
+              to derive a unique picture and background from each name. State is
+              managed with Redux. CI/CD runs on CircleCI with Jest unit tests,
+              and the app is deployed on AWS Amplify with Amazon Route 53 for
+              the subdomain.
             </p>
             <nav className="projectLinks" aria-label="Kitten Generator links">
               <ExternalLink
