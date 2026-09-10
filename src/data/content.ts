@@ -137,7 +137,7 @@ function externalAnchor(href: string, className: string | undefined, text: strin
 }
 
 function heroHtml(): string {
-  return `<header class="aboutMe"><div class="heroCopy"><h1>${escapeHtml(HERO.name)}</h1><p class="heroRole">${escapeHtml(HERO.role)}</p><p class="heroDomain">${escapeHtml(HERO.domain)}</p><p class="heroPitch">${escapeHtml(HERO.pitch)}</p><p class="heroMeta">${escapeHtml(HERO.meta)}</p></div></header>`;
+  return `<header class="aboutMe"><div class="heroCopy"><h1>${escapeHtml(HERO.name)}</h1><p class="heroRole">${escapeHtml(HERO.role)}</p><p class="heroDomain">${escapeHtml(HERO.domain)}</p><p class="heroPitch">${escapeHtml(HERO.pitch)}</p><p class="heroMeta">${escapeHtml(HERO.meta)}</p></div><!--PROFILE_PICTURE--></header>`;
 }
 
 function workHtml(): string {

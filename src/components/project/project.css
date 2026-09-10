@@ -69,6 +69,7 @@
 }
 
 .projectLink {
+  position: relative;
   margin: 2vh 1vw;
   padding: 1vh 1vw;
   text-decoration: none;

@@ -8,6 +8,10 @@ type PictureProps = {
   className?: string;
   loading?: "eager" | "lazy";
   fetchPriority?: "high" | "low" | "auto";
+  sizes?: string;
+  avifSrcSet?: string;
+  webpSrcSet?: string;
+  srcSet?: string;
 };
 
 export default function Picture({
@@ -20,11 +24,17 @@ export default function Picture({
   className,
   loading = "lazy",
   fetchPriority,
+  sizes,
+  avifSrcSet,
+  webpSrcSet,
+  srcSet,
 }: PictureProps) {
   const img = (
     <img
       className={className}
       src={src}
+      srcSet={srcSet}
+      sizes={srcSet ? sizes : undefined}
       alt={alt}
       width={width}
       height={height}
@@ -40,8 +50,20 @@ export default function Picture({
 
   return (
     <picture>
-      {avif && <source type="image/avif" srcSet={avif} />}
-      {webp && <source type="image/webp" srcSet={webp} />}
+      {avif && (
+        <source
+          type="image/avif"
+          srcSet={avifSrcSet ?? avif}
+          sizes={avifSrcSet ? sizes : undefined}
+        />
+      )}
+      {webp && (
+        <source
+          type="image/webp"
+          srcSet={webpSrcSet ?? webp}
+          sizes={webpSrcSet ? sizes : undefined}
+        />
+      )}
       {img}
     </picture>
   );

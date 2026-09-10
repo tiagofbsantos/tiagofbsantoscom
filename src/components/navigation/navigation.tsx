@@ -19,8 +19,8 @@ export default function Navigation(props: NavigationProps) {
       <div className="navLeft">
         {props.page === "homepage" && (
           <>
-            <a href="#projects" className="svgWrapper">
-              <svg className="projectsSvg" xmlns="http://www.w3.org/2000/svg">
+            <a href="#projects" className="svgWrapper" aria-label="Projects">
+              <svg className="projectsSvg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <g>
                   <rect
                     x="0"
@@ -41,10 +41,11 @@ export default function Navigation(props: NavigationProps) {
                 </g>
               </svg>
             </a>
-            <a href="#miniProjects" className="svgWrapper">
+            <a href="#miniProjects" className="svgWrapper" aria-label="Mini Projects">
               <svg
                 className="miniProjectsSvg"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g>
                   <rect
@@ -76,8 +77,9 @@ export default function Navigation(props: NavigationProps) {
                 : "/"
             }
             className="svgWrapper"
+            aria-label={props.page === "notFound" ? "Home" : "Back"}
           >
-            <svg className="backSvg" xmlns="http://www.w3.org/2000/svg">
+            <svg className="backSvg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <g>
                 <rect
                   x="0"

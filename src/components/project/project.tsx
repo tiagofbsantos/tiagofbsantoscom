@@ -43,6 +43,7 @@ export default function Project({
           {moreInfo && (
             <Link to={moreInfo} className="projectLink">
               More Info
+              <span className="visuallyHidden"> about {name}</span>
             </Link>
           )}
         </nav>
