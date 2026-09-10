@@ -125,6 +125,10 @@
   padding: 0;
 }
 
+.compact .projectImg {
+  margin-top: 0.25rem;
+}
+
 .compact .projectImg img {
   box-shadow: none;
   border: 1px solid #e2e8ec;
@@ -142,11 +146,15 @@
 
 .compact .projectLinks {
   justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 1.5rem;
 }
 
 .compact .projectLink {
-  margin: 0 0.75rem 0 0;
+  margin: 0;
+  padding: 0.55rem 0.85rem;
   font-size: 15px;
 }
 
