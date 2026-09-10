@@ -104,8 +104,10 @@
   height: auto;
 }
 
-.pwaImg>img {
+.pwaImg > img {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 1024px) {

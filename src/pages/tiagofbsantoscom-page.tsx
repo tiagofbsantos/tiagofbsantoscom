@@ -115,7 +115,7 @@ export default function TiagoFBSantosCom() {
                 <TechLogo key={logo.label} {...logo} />
               ))}
             </div>
-            <p>Progressive Web App Lighthouse Score: </p>
+            <p>Lighthouse Score:</p>
             <ExternalLink
               className="pwaImg"
               href="https://developer.chrome.com/docs/lighthouse/overview"
@@ -123,9 +123,9 @@ export default function TiagoFBSantosCom() {
             >
               <img
                 src={pwaScore}
-                alt="Progressive Web App Lighthouse Score"
-                width={500}
-                height={127}
+                alt="Lighthouse Score"
+                width={864}
+                height={147}
                 loading="lazy"
                 decoding="async"
               />
