@@ -75,17 +75,20 @@ export default function TiagoFBSantosCom() {
             <h1 className="projectTitle">Tiago F. B. Santos .com</h1>
             <p>{intro?.intro}</p>
             <p>
-              Every route is prerendered at build time. A Vite plugin writes
-              per-route HTML with its own title, description, canonical URL,
-              Open Graph tags and JSON-LD, and injects the page content as
-              static markup, so crawlers, social unfurlers and automated readers
-              get the text without executing JavaScript.
+              Every indexed route is prerendered at build time. A Vite plugin
+              writes per-route HTML with its own title, description, canonical
+              URL, Open Graph tags and JSON-LD, and injects the page text as
+              static markup: the full work history and writing on the homepage,
+              the title and intro on each project page. Crawlers, social
+              unfurlers and automated readers get it without executing
+              JavaScript.
             </p>
             <p>
               Screenshots and the profile photo ship as AVIF and WebP with JPEG
-              fallbacks, fonts as woff2, and routes are code-split, so the first
-              load stays small. The service worker is Vite PWA in auto-update
-              mode with an offline fallback page.
+              or PNG fallbacks, fonts as woff2, and the project routes are
+              code-split, so the first load stays small. The service worker is
+              Vite PWA in auto-update mode, precaching the shell so repeat
+              visits work offline.
             </p>
             <p>
               The animated navigation labels are inline SVG with stroke-dasharray
