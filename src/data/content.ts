@@ -62,7 +62,7 @@ export const WORK: WorkRole[] = [
       "Took the platform over when the senior engineer and the CTO left at the same time, as the only person who knew how the systems worked, and was sole owner of around 50 repositories for about a year.",
       "Ran requirements directly with the bank's stakeholders, finance specialists with no software background: worked out what was feasible, then designed and implemented it.",
       "Owned delivery end to end, including the servers, deployments and production maintenance.",
-      "The client brought a platform's frontend in-house from an external vendor on the strength of our delivery record, after earlier attempts to win that work had not succeeded; I took it on and owned it for my last four months.",
+      "The client brought a platform's frontend in-house from an external vendor on the strength of our delivery record, after earlier attempts to win that work had not succeeded. I took it on and owned it for my last four months.",
       "Interviewed and selected the engineer for the one opening I was given, then onboarded him across the codebase and ran his code reviews.",
       "Handed the work over to a team of three on my departure.",
     ],
