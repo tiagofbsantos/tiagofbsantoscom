@@ -22,7 +22,7 @@ export type ProjectIntro = {
   intro: string;
 };
 
-export const LAST_UPDATED = "8 September 2026";
+export const LAST_UPDATED = "17 September 2026";
 
 export const HERO = {
   name: "Tiago Santos",
@@ -43,7 +43,7 @@ export const WORK: WorkRole[] = [
       "Expense and business-travel spend platform for enterprises. I joined Yokoy as a backend engineer on the Expense platform, which TravelPerk later acquired and rebranded as Perk. TypeScript and Node.js microservices on GCP (Cloud Run, Cloud Functions), Firestore and MongoDB, PostgreSQL, Terraform, Datadog.",
     bullets: [
       "Led France receipt digitization from refinement to full rollout: receipts converted to PDF/A-3 with lossless compression, XMP metadata, internal timestamping, and digital signature, gated per legal entity behind a feature flag. A legal prerequisite for selling in France.",
-      "Found, while verifying that rollout, that receipts for Spanish legal entities had been signed for months with an expired certificate, making them legally invalid, with no alerting or error logging to catch it. Scoped the affected records and built the expiry monitoring and alerting now in place.",
+      "Found, while verifying that rollout, that receipts for Spanish legal entities had been signed for months with an expired certificate, making them legally invalid, with no alerting or error logging to catch it. Scoped the affected records and built the certificate-expiry monitoring and alerting now in place.",
       "Owned travel-to-expense integrations (TravelPerk, Egencia): booking import, duplicate and credit-note handling, lodge-card matching, and auto-submission of pre-approved travel expenses into the expense workflow.",
       "Implemented a new expense action API so a stale client could no longer silently overwrite a document.",
       "Standardized user-facing errors and workflow notifications onto a localization-key contract, across the expense backend and a shared workflow library, so users can see what went wrong and fix it themselves instead of opening a support ticket, against a team goal of halving support volume.",
@@ -82,7 +82,7 @@ export const WORK: WorkRole[] = [
   },
   {
     company: "Bondalti",
-    title: "BI Developer, previously BI Intern",
+    title: "Business Intelligence Developer, previously Business Intelligence Intern",
     dates: "2016 - 2017",
     location: "Portugal",
     summary:
@@ -117,7 +117,7 @@ export const PROJECT_INTROS: ProjectIntro[] = [
   },
   {
     path: "/projects/tiagofbsantoscom",
-    title: "Tiago F. B. Santos .com",
+    title: "tiagofbsantos.com",
     intro:
       "This site. A responsive progressive web app built with Vite, TypeScript, React and React Router, deployed to AWS Amplify with Amazon Route 53 for the domain.",
   },

@@ -48,7 +48,7 @@ export const ROUTES: PageMeta[] = [
   },
   {
     path: "/projects/tiagofbsantoscom",
-    title: "Tiago F. B. Santos .com | Tiago Santos",
+    title: "tiagofbsantos.com | Tiago Santos",
     description:
       "This site: a prerendered React and TypeScript progressive web app on Vite, deployed to AWS Amplify.",
     ogType: "website",

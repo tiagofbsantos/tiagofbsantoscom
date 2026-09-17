@@ -62,7 +62,7 @@ export const projectsList: ProjectItem[] = [
       width: 2529,
       height: 1294,
     },
-    name: "Tiago F. B. Santos .com",
+    name: "tiagofbsantos.com",
     description:
       "This site. A prerendered React and TypeScript progressive web app on Vite, deployed to AWS Amplify.",
     source: "https://github.com/tiagofbsantos/tiagofbsantoscom",

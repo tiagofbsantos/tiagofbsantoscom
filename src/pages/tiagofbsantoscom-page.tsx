@@ -72,7 +72,7 @@ export default function TiagoFBSantosCom() {
       <div className="projectPageBackground">
         <main id="main" tabIndex={-1} className="projectPage">
           <article className="text">
-            <h1 className="projectTitle">Tiago F. B. Santos .com</h1>
+            <h1 className="projectTitle">tiagofbsantos.com</h1>
             <p>{intro?.intro}</p>
             <p>
               Every indexed route is prerendered at build time. A Vite plugin
@@ -82,6 +82,13 @@ export default function TiagoFBSantosCom() {
               the title and intro on each project page. Crawlers, social
               unfurlers and automated readers get it without executing
               JavaScript.
+            </p>
+            <p>
+              A plain-text{" "}
+              <ExternalLink href="/llms.txt">llms.txt</ExternalLink> at the site
+              root carries the same work history, writing and project summaries
+              in a structure built for language models and automated screeners,
+              served as text/plain and pointed at from robots.txt.
             </p>
             <p>
               Screenshots and the profile photo ship as AVIF and WebP with JPEG
