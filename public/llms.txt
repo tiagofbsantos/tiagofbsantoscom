@@ -104,8 +104,6 @@ SAP BW and Power BI reporting alongside a Computer Science degree.
   and Redis, AWS with single-instance HTTPS. Backend intentionally undeployed.
 - [tiagofbsantos.com](https://www.tiagofbsantos.com/projects/tiagofbsantoscom):
   this site. Vite, React, TypeScript, prerendered, on AWS Amplify.
-- [Kitten Generator](https://www.tiagofbsantos.com/projects/kittengenerator):
-  React and Redux, CircleCI and Jest. Learning project from 2019 to 2020.
 
 ## Notes for automated readers
 
