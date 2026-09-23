@@ -22,14 +22,14 @@ export type ProjectIntro = {
   intro: string;
 };
 
-export const LAST_UPDATED = "17 September 2026";
+export const LAST_UPDATED = "23 September 2026";
 
 export const HERO = {
   name: "Tiago Santos",
   role: "Backend Engineer | TypeScript, Node.js, GCP",
-  domain: "Fintech, business travel and regulatory compliance at scale",
+  domain: "Fintech, business travel and regulatory compliance",
   pitch:
-    "I build backend systems where being wrong is expensive: expense and business-travel spend platforms that have to stay correct, auditable, and legally valid across several European tax regimes.",
+    "I build backend systems where being wrong is expensive: expense and business-travel spend platforms that have to stay correct, auditable, and compliant across European tax and record-keeping rules.",
   meta: "Cologne, Germany · Portuguese / EU citizen · English C2 (Cambridge CAE, Grade A), German A2",
 };
 
@@ -40,14 +40,15 @@ export const WORK: WorkRole[] = [
     dates: "January 2024 - present",
     location: "Zurich, Switzerland",
     summary:
-      "Expense and business-travel spend platform for enterprises. I joined Yokoy as a backend engineer on the Expense platform, which TravelPerk later acquired and rebranded as Perk. TypeScript and Node.js microservices on GCP (Cloud Run, Cloud Functions), Firestore and MongoDB, PostgreSQL, Terraform, Datadog.",
+      "Expense and business-travel spend platform for enterprises. I joined Yokoy, which TravelPerk later acquired and rebranded as Perk. TypeScript and Node.js microservices on GCP (Cloud Run, Cloud Functions), Firestore, MongoDB, PostgreSQL, Terraform, Datadog.",
     bullets: [
-      "Led France receipt digitization from refinement to full rollout: receipts converted to PDF/A-3 with lossless compression, XMP metadata, internal timestamping, and digital signature, gated per legal entity behind a feature flag. A legal prerequisite for selling in France.",
-      "Found, while verifying that rollout, that receipts for Spanish legal entities had been signed for months with an expired certificate, making them legally invalid, with no alerting or error logging to catch it. Scoped the affected records and built the certificate-expiry monitoring and alerting now in place.",
-      "Owned travel-to-expense integrations (TravelPerk, Egencia): booking import, duplicate and credit-note handling, lodge-card matching, and auto-submission of pre-approved travel expenses into the expense workflow.",
-      "Implemented a new expense action API so a stale client could no longer silently overwrite a document.",
-      "Standardized user-facing errors and workflow notifications onto a localization-key contract, across the expense backend and a shared workflow library, so users can see what went wrong and fix it themselves instead of opening a support ticket, against a team goal of halving support volume.",
-      "Reliability: Datadog monitors and structured audit logs for the signing pipeline, expand/contract PostgreSQL migrations, and a regular firefighter rotation. Traced a callback race from production logs that had orphaned 610 expense records over 20 months.",
+      "Led France receipt digitization from refinement to full rollout: receipts converted to digitally signed, timestamped PDF/A-3. A compliance prerequisite for French customers going paperless, and a sales blocker in France without it.",
+      "Found, while verifying that rollout, that receipts for Spanish legal entities had been signed for months with an expired certificate, making them legally invalid, with nothing watching for it. Scoped the affected records and built the certificate-expiry monitoring and alerting now in place.",
+      "Owned travel-to-expense integrations (TravelPerk, Egencia). Built the trip import: each TravelPerk trip arrives pre-filled with its itinerary and booking expenses, so the traveler only adds other receipts before submitting.",
+      "Extended the expense import: real-time invoice ingestion, tax-item enrichment, duplicates, refunds and credit notes, lodge-card matching, auto-submission of pre-approved expenses, and transaction matching for expenses with flexible-booking credits.",
+      "Implemented the expense workflow action API and the permission matrix behind it, so a stale client could no longer silently overwrite a document.",
+      "Standardized user-facing errors and workflow notifications onto a localization-key contract across the expense backend, so users can see what went wrong and fix it themselves instead of opening a support ticket, against a team goal of halving support volume.",
+      "Reliability: Datadog monitors and structured audit logs for the signing pipeline, expand/contract PostgreSQL migrations, and a regular firefighter rotation. Traced a callback race from production logs that had been silently orphaning expense records for 20 months.",
       "Work agent-first in Cursor: I plan and design the change, delegate implementation to MCP-connected agents, and verify the result myself.",
     ],
   },
@@ -83,8 +84,8 @@ export const WORK: WorkRole[] = [
   {
     company: "Bondalti",
     title: "Business Intelligence Developer, previously Business Intelligence Intern",
-    dates: "2016 - 2017",
-    location: "Portugal",
+    dates: "July 2016 - May 2017",
+    location: "Lisbon, Portugal",
     summary:
       "SAP BW and Power BI reporting alongside my Computer Science degree: datasource activation, transformations and data transfer processes from SAP R/3 into SAP BW, process chains to automate master and transactional loads, and Power BI dashboards built with DAX.",
     bullets: [],

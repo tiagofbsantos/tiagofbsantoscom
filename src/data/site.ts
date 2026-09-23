@@ -18,7 +18,7 @@ export const HOME_PAGE: PageMeta = {
   path: "/",
   title: "Tiago Santos | Backend Engineer",
   description:
-    "Backend engineer working on expense and business-travel spend platforms. TypeScript, Node.js and GCP, with a focus on systems that must stay correct, auditable and legally valid across European tax regimes.",
+    "Backend engineer working on expense and business-travel spend platforms. TypeScript, Node.js and GCP, with a focus on systems that must stay correct, auditable and compliant across European tax and record-keeping rules.",
   ogType: "profile",
 };
 
@@ -106,7 +106,6 @@ export function jsonLd(page: PageMeta): object {
       "Microservices",
       "Distributed Systems",
       "REST API Design",
-      "Event-Driven Architecture",
       "MongoDB",
       "PostgreSQL",
       "Firestore",

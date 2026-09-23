@@ -2,7 +2,7 @@
 
 > Backend engineer working on expense and business-travel spend platforms.
 > TypeScript, Node.js and GCP, with a focus on systems that must stay correct,
-> auditable and legally valid across European tax regimes.
+> auditable and compliant across European tax and record-keeping rules.
 
 Role: Backend Engineer at Perk, since January 2024.
 Location: Cologne, Germany.
@@ -17,9 +17,9 @@ GitHub: https://github.com/tiagofbsantos
 
 Backend engineer with production experience in fintech and business travel.
 Works in TypeScript and Node.js microservices on Google Cloud Platform, with
-Firestore, MongoDB and PostgreSQL, Terraform and Datadog. Led the France
-receipt digitization programme end to end, a legal prerequisite for selling
-the product in France. Found and scoped an expired document-signing
+Firestore, MongoDB, PostgreSQL, Terraform and Datadog. Led the France
+receipt digitization program end to end, the compliance prerequisite for
+French customers going paperless. Found and scoped an expired document-signing
 certificate that had been silently invalidating Spanish records, and built the
 expiry monitoring that runs today. Owns travel-to-expense integrations and
 takes a regular production firefighter rotation. Works agent-first in Cursor,
@@ -28,34 +28,43 @@ agents, and verifying the result.
 
 ## Experience
 
-### Perk - Backend Engineer - January 2024 to present - Zurich
+### Perk - Backend Engineer - January 2024 to present - Zurich, Switzerland
 
-Expense and business-travel spend platform for enterprises. Joined Yokoy on
-the Expense platform, which TravelPerk later acquired and rebranded as Perk.
+Expense and business-travel spend platform for enterprises. Joined Yokoy,
+which TravelPerk later acquired and rebranded as Perk.
 Stack: TypeScript, Node.js, GCP Cloud Run and Cloud Functions, Firestore,
 MongoDB, PostgreSQL, Terraform, Datadog.
 
-- Led France receipt digitization from refinement to full rollout: PDF/A-3
-  conversion with lossless compression, XMP metadata, internal timestamping
-  and digital signature, gated per legal entity behind a feature flag.
-- Found that receipts for Spanish legal entities had been signed for months
-  with an expired certificate, making them legally invalid, with no alerting.
-  Scoped the affected records and built the certificate-expiry monitoring and
-  alerting.
-- Owned travel-to-expense integrations (TravelPerk, Egencia): booking import,
-  duplicate and credit-note handling, lodge-card matching, and auto-submission
-  of pre-approved travel expenses.
-- Implemented a new expense action API so a stale client could no longer
-  silently overwrite a document.
+- Led France receipt digitization from refinement to full rollout: receipts
+  converted to digitally signed, timestamped PDF/A-3. A compliance
+  prerequisite for French customers going paperless, and a sales blocker in
+  France without it.
+- Found, while verifying that rollout, that receipts for Spanish legal
+  entities had been signed for months with an expired certificate, making
+  them legally invalid, with nothing watching for it. Scoped the affected
+  records and built the certificate-expiry monitoring and alerting now in
+  place.
+- Owned travel-to-expense integrations (TravelPerk, Egencia). Built the trip
+  import: each TravelPerk trip arrives pre-filled with its itinerary and
+  booking expenses, so the traveler only adds other receipts before
+  submitting.
+- Extended the expense import: real-time invoice ingestion, tax-item
+  enrichment, duplicates, refunds and credit notes, lodge-card matching,
+  auto-submission of pre-approved expenses, and transaction matching for
+  expenses with flexible-booking credits.
+- Implemented the expense workflow action API and the permission matrix
+  behind it, so a stale client could no longer silently overwrite a
+  document.
 - Standardized user-facing errors and workflow notifications onto a
-  localization-key contract across the expense backend and a shared workflow
-  library, against a team goal of halving support volume.
+  localization-key contract across the expense backend, so users can see
+  what went wrong and fix it themselves instead of opening a support ticket,
+  against a team goal of halving support volume.
 - Reliability: Datadog monitors and structured audit logs for the signing
-  pipeline, expand/contract PostgreSQL migrations, firefighter rotation.
-  Traced a callback race from production logs that had orphaned 610 expense
-  records over 20 months.
+  pipeline, expand/contract PostgreSQL migrations, and a regular firefighter
+  rotation. Traced a callback race from production logs that had been
+  silently orphaning expense records for 20 months.
 
-### Etops - Software Engineer (Technical Lead) - September 2022 to December 2023 - Zurich
+### Etops - Software Engineer (Technical Lead) - September 2022 to December 2023 - Zurich, Switzerland
 
 Globalance World, a sustainability and wealth-impact analytics platform for a
 Zurich private bank, covering 12,000 portfolios and 300,000 securities.
@@ -68,7 +77,7 @@ Stack: TypeScript, Node.js, MongoDB, Redis, React, Docker, CI/CD.
 - Interviewed and selected one engineer, onboarded him and ran his reviews.
 - Handed the work over to a team of three on departure.
 
-### Etops - Software Engineer (Full Stack) - September 2020 to August 2022 - Zurich
+### Etops - Software Engineer (Full Stack) - September 2020 to August 2022 - Zurich, Switzerland
 
 - Built a machine-learning document parser for a Swiss financial institution
   using Azure Cognitive Services, TensorFlow, Detectron2 and YOLOv5 with COCO,
@@ -76,20 +85,20 @@ Stack: TypeScript, Node.js, MongoDB, Redis, React, Docker, CI/CD.
 - Contributed to and maintained a data warehouse platform.
 - Stack: TypeScript, Node.js, React, Go, MongoDB, Redis, Docker, CI/CD.
 
-### Bondalti - Business Intelligence Developer, previously Business Intelligence Intern - 2016 to 2017 - Portugal
+### Bondalti - Business Intelligence Developer, previously Business Intelligence Intern - July 2016 to May 2017 - Lisbon, Portugal
 
 SAP BW and Power BI reporting alongside a Computer Science degree.
 
 ## Education
 
 - BSc Computer Science and Business Management, ISCTE - Instituto
-  Universitário de Lisboa.
-- Erasmus exchange programme, Università degli Studi di Brescia.
+  Universitário de Lisboa, Portugal.
+- Erasmus exchange programme, Università degli Studi di Brescia, Italy.
 
 ## Certifications
 
-- Cambridge C2 Proficiency (CAE), Grade A.
-- German A2, fide, October 2025.
+- Cambridge English: C2 Proficiency (CAE), Grade A.
+- German Language Passport (A2), fide Switzerland, October 2025.
 
 ## Writing
 
