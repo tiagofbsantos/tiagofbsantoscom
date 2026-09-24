@@ -22,7 +22,7 @@ export type ProjectIntro = {
   intro: string;
 };
 
-export const LAST_UPDATED = "23 September 2026";
+export const LAST_UPDATED = "24 September 2026";
 
 export const HERO = {
   name: "Tiago Santos",
@@ -45,6 +45,7 @@ export const WORK: WorkRole[] = [
       "Led France receipt digitization from refinement to full rollout: receipts converted to digitally signed, timestamped PDF/A-3. A compliance prerequisite for French customers going paperless, and a sales blocker in France without it.",
       "Found, while verifying that rollout, that receipts for Spanish legal entities had been signed for months with an expired certificate, making them legally invalid, with nothing watching for it. Scoped the affected records and built the certificate-expiry monitoring and alerting now in place.",
       "Owned travel-to-expense integrations (TravelPerk, Egencia). Built the trip import: each TravelPerk trip arrives pre-filled with its itinerary and booking expenses, so the traveler only adds other receipts before submitting.",
+      "Built the first outbound integration to Egencia, using its Custom Data Fields API, so bookings from a company with several billable entities reach the right legal entity. Designed the OAuth 2.0 flow, including where the credentials and tokens are stored, and worked out authentication and per-company permissions with Egencia.",
       "Extended the expense import: real-time invoice ingestion, tax-item enrichment, duplicates, refunds and credit notes, lodge-card matching, auto-submission of pre-approved expenses, and transaction matching for expenses with flexible-booking credits.",
       "Implemented the expense workflow action API and the permission matrix behind it, so a stale client could no longer silently overwrite a document.",
       "Standardized user-facing errors and workflow notifications onto a localization-key contract across the expense backend, so users can see what went wrong and fix it themselves instead of opening a support ticket, against a team goal of halving support volume.",

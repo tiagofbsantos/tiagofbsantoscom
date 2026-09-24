@@ -115,6 +115,7 @@ export function jsonLd(page: PageMeta): object {
       "Incident Response",
       "Digital Signatures",
       "Public Key Infrastructure",
+      "OAuth 2.0",
       "Regulatory Compliance",
       "Expense Management",
       "Fintech",

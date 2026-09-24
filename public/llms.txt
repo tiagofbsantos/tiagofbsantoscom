@@ -48,6 +48,11 @@ MongoDB, PostgreSQL, Terraform, Datadog.
   import: each TravelPerk trip arrives pre-filled with its itinerary and
   booking expenses, so the traveler only adds other receipts before
   submitting.
+- Built the first outbound integration to Egencia, using its Custom Data
+  Fields API, so bookings from a company with several billable entities
+  reach the right legal entity. Designed the OAuth 2.0 flow, including where
+  the credentials and tokens are stored, and worked out authentication and
+  per-company permissions with Egencia.
 - Extended the expense import: real-time invoice ingestion, tax-item
   enrichment, duplicates, refunds and credit notes, lodge-card matching,
   auto-submission of pre-approved expenses, and transaction matching for
